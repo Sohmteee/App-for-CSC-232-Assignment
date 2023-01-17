@@ -37,6 +37,7 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             CustomField(
+              icon: const Icon(Icons.person),
               controller: firstName,
               hintText: "First Name",
             ),
