@@ -1,5 +1,4 @@
-import 'package:flutter/cupertino.dart';
-
+import '';
 final TextEditingController firstName = TextEditingController();
 final TextEditingController lastName = TextEditingController();
 final TextEditingController regNo = TextEditingController();
