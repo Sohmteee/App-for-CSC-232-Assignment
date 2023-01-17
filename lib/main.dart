@@ -1,3 +1,4 @@
+import 'package:app_for_csc_232_assignment/data.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -36,7 +37,8 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             CustomField(
-              
+              controller: firstName,
+              hintText: "First Name",
             ),
           ],
         ),
