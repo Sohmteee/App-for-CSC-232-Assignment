@@ -14,21 +14,26 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: const HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class name extends StatefulWidget {
-  const name({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<name> createState() => _nameState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _nameState extends State<name> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [],
+      ),
+    );
   }
 }
