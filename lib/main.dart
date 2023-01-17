@@ -33,11 +33,16 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.all(20),
         child: ListView(
           children: [
             CustomField(
               icon: const Icon(Icons.person),
+              controller: firstName,
+              hintText: "First Name",
+            ),
+            const SizedBox(height: 10),
+            CustomField(
               controller: firstName,
               hintText: "First Name",
             ),
