@@ -33,7 +33,7 @@ git add .
 
 echo.
 echo Adding commit...
-git commit --date "10 days ago" -m "commit"
+git commit -m "commit"
 echo Added commit successfully
 
 git branch -M main
