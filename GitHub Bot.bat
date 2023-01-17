@@ -51,6 +51,6 @@ git push -u origin main
 goto end
 
 :end
-timeout 60
+timeout 5
 cls
 goto start
