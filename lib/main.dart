@@ -35,11 +35,51 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: ListView(
           children: [
-            TextField(
+            CustomField(
               
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class CustomField extends StatefulWidget {
+  const CustomField({
+    super.key,
+    required this.hintText,
+    required this.controller,
+    this.icon,
+  });
+
+  final String hintText;
+  final TextEditingController controller;
+  final Icon? icon;
+
+  @override
+  State<CustomField> createState() => _CustomFieldState();
+}
+
+class _CustomFieldState extends State<CustomField> {
+  @override
+  Widget build(BuildContext context) {
+    return TextField(
+      onChanged: (value) {
+        setState(() {
+          widget.controller.text = value;
+        });
+      },
+      decoration: InputDecoration(
+        icon: widget.icon ??
+            const SizedBox(
+              width: 20,
+            ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
+        hintText: widget.hintText,
+        labelText: widget.hintText,
       ),
     );
   }
