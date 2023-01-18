@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
               controller: firstName,
               hintText: "First Name",
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 7),
             CustomField(
               controller: lastName,
               hintText: "Surname",
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
               controller: faculty,
               hintText: "Faculty",
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 7),
             CustomField(
               controller: department,
               hintText: "Department",
