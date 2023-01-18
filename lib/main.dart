@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: const [ Icon(Icons.male_rounded)],
+              icon: const Icon(Icons.male_rounded),
               controller: sex,
               hintText: "Sex",
             ),
@@ -103,7 +103,9 @@ class _CustomFieldState extends State<CustomField> {
       },
       decoration: InputDecoration(
         icon: widget.icon ??
-            
+            const SizedBox(
+              width: 20,
+            ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
