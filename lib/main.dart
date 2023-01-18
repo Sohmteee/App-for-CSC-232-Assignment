@@ -86,7 +86,7 @@ class CustomField extends StatefulWidget {
 
   final String hintText;
   final TextEditingController controller;
-  final Widget? icon;
+  final List<Icons?>? icon;
 
   @override
   State<CustomField> createState() => _CustomFieldState();
