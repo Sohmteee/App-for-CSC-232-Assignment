@@ -54,9 +54,9 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: const Icon(Icons.ho),
-              controller: regNo,
-              hintText: "Reg Number",
+              icon: const Icon(Icons.home_max_rounded),
+              controller: faculty,
+              hintText: "Faculty",
             ),
           ],
         ),
