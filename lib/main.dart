@@ -105,9 +105,7 @@ class _CustomFieldState extends State<CustomField> {
         icon: widget.icon ??
             Row(
               children: [],
-            )[SizedBox(
-              width: 20,
-            )],
+            ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
