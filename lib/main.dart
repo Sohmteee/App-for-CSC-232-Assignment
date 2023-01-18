@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: const Icon(Icons.male),
+              icon: const Icon(Icons.male_rounded),
               controller: regNo,
               hintText: "Reg Number",
             ),
