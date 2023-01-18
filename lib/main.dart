@@ -103,7 +103,7 @@ class _CustomFieldState extends State<CustomField> {
       },
       decoration: InputDecoration(
         icon: widget.icon ??
-            const [SizedBox(
+            List[SizedBox(
               width: 20,
             )],
         border: OutlineInputBorder(
