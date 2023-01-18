@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: [ Icon(Icons.male_rounded)],
+              icon: const [ Icon(Icons.male_rounded)],
               controller: sex,
               hintText: "Sex",
             ),
@@ -86,7 +86,7 @@ class CustomField extends StatefulWidget {
 
   final String hintText;
   final TextEditingController controller;
-  final Widget? icon;
+  final List?<Icons icon;
 
   @override
   State<CustomField> createState() => _CustomFieldState();
