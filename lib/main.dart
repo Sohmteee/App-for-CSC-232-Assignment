@@ -86,7 +86,7 @@ class CustomField extends StatefulWidget {
 
   final String hintText;
   final TextEditingController controller;
-  final List<Icons>? icon;
+  final Widget? icon;
 
   @override
   State<CustomField> createState() => _CustomFieldState();
@@ -102,10 +102,10 @@ class _CustomFieldState extends State<CustomField> {
         });
       },
       decoration: InputDecoration(
-        icon: widget.icon.length < 1 ?
+        icon: widget.icon ??
             const SizedBox(
               width: 20,
-            ) : Row(children: []),
+            ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
