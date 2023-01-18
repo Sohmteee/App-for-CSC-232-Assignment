@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: const Icon(Icons.home),
+              icon: const Icon(Icons.home_rounded),
               controller: faculty,
               hintText: "Faculty",
             ),
