@@ -102,7 +102,7 @@ class _CustomFieldState extends State<CustomField> {
         });
       },
       decoration: InputDecoration(
-        icon: widget.icon[0] ??
+        icon: widget.icon.length < 1 ??
             const SizedBox(
               width: 20,
             ),
