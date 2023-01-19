@@ -106,7 +106,7 @@ class _CustomFieldState extends State<CustomField> {
       },
       decoration: InputDecoration(
         icon: widget.icon != null
-            ? Row(
+            ? widget.icon.length > 1 ? (
                 children: [
                   widget.icon![0],
                   widget.icon![1],
