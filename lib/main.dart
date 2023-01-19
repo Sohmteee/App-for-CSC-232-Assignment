@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             CustomField(
-              icon: const Icon(Icons.person),
+              icon: const [Icon(Icons.person)],
               controller: firstName,
               hintText: "First Name",
             ),
@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: [
+              icon: const [
                 Icon(Icons.male_rounded),
                 Icon(Icons.female_rounded),
               ],
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: const Icon(Icons.numbers),
+              icon: const [Icon(Icons.numbers)],
               controller: regNo,
               hintText: "Reg Number",
             ),
