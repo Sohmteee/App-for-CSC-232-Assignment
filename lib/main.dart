@@ -107,11 +107,13 @@ class _CustomFieldState extends State<CustomField> {
       decoration: InputDecoration(
         icon: widget.icon != null
             ? widget.icon!.length > 1
-                ? Row(
-                    children: [
-                      widget.icon![0],
-                      widget.icon![1],
-                    ],
+                ? Expanded(
+                    child: Row(
+                      children: [
+                        widget.icon![0],
+                        widget.icon![1],
+                      ],
+                    ),
                   )
                 : widget.icon![0]
             : const SizedBox(),
