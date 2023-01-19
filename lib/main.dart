@@ -105,7 +105,12 @@ class _CustomFieldState extends State<CustomField> {
         });
       },
       decoration: InputDecoration(
-        icon: Row(children: []),
+        icon: widget.icon.Row(
+          children: [
+            widget.icon![0],
+            widget.icon![1],
+          ],
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
