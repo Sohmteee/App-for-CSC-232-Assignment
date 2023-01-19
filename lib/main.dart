@@ -109,6 +109,7 @@ class _CustomFieldState extends State<CustomField> {
             ? widget.icon!.length > 1
                 ? Expanded(
                     child: Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
                         widget.icon![0],
                         widget.icon![1],
