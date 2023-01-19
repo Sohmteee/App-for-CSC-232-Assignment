@@ -116,7 +116,13 @@ class _CustomFieldState extends State<CustomField> {
                       ],
                     ),
                   )
-                : widget.icon![0]
+                : Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      widget.icon![0],
+                      const SizedBox(width: 20),
+                    ],
+                  )
             : const SizedBox(width: 20),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
