@@ -108,6 +108,7 @@ class _CustomFieldState extends State<CustomField> {
         icon: widget.icon != null
             ? widget.icon!.length > 1
                 ? Expanded(
+                  
                     child: Row(
                       children: [
                         widget.icon![0],
