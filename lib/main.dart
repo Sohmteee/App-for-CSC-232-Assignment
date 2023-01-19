@@ -123,7 +123,7 @@ class _CustomFieldState extends State<CustomField> {
                       const SizedBox(width: 20),
                     ],
                   )
-            : const SizedBox(width: 20),
+            : const SizedBox(width: 40),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
