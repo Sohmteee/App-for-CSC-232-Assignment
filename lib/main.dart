@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             CustomField(
-              icon: const [Icon(Icons.person)],
+              icon: const Icon(Icons.person),
               controller: firstName,
               hintText: "First Name",
             ),
@@ -48,22 +48,19 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: const [
-                Icon(Icons.male_rounded),
-                Icon(Icons.female_rounded),
-              ],
+              icon: const Icon(Icons.male_rounded),
               controller: sex,
-              hintText: "Sex",
+              hintText: "Se",
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: const [Icon(Icons.numbers)],
+              icon: const Icon(Icons.numbers),
               controller: regNo,
               hintText: "Reg Number",
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: const [Icon(Icons.home_rounded)],
+              icon: const Icon(Icons.home_rounded),
               controller: faculty,
               hintText: "Faculty",
             ),
@@ -89,7 +86,7 @@ class CustomField extends StatefulWidget {
 
   final String hintText;
   final TextEditingController controller;
-  final List<Icon>? icon;
+  final Icon? icon;
 
   @override
   State<CustomField> createState() => _CustomFieldState();
@@ -105,19 +102,10 @@ class _CustomFieldState extends State<CustomField> {
         });
       },
       decoration: InputDecoration(
-        icon: widget.icon != null
-            ? widget.icon!.length > 1
-                ? Expanded(
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        widget.icon![0],
-                        widget.icon![1],
-                      ],
-                    ),
-                  )
-                : widget.icon![0]
-            : const SizedBox(width: 20),
+        icon: widget.icon ??
+            const SizedBox(
+              width: 20,
+            ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
