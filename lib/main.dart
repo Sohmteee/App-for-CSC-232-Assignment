@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
                   sexValue = newValue!;
                 });
               },
-              hint: "Sex",
+              hint: Text("Sex"),
             ),
             const SizedBox(height: 20),
             CustomField(
