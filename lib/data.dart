@@ -7,7 +7,7 @@ final TextEditingController stateOfOrigin = TextEditingController();
 final TextEditingController phoneNumber = TextEditingController();
 final TextEditingController email = TextEditingController();
 
-String sexValue = 
+String? sexValue;
 List<String> sex = [
   "Male",
   "Female",
