@@ -68,10 +68,6 @@ class _HomePageState extends State<HomePage> {
               hintText: "Reg Number",
             ),
             const SizedBox(height: 7),
-            CustomField(
-              controller: department,
-              hintText: "Department",
-            ),
           ],
         ),
       ),
