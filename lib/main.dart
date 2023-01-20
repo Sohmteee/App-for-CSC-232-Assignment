@@ -52,7 +52,11 @@ class _HomePageState extends State<HomePage> {
                   value: items,
                   child: Text(items),
                 );
-              }).toList(), onChanged: onChanged),
+              }).toList(), onChanged: (String? newValue) {
+                  setState(() {
+                    dropdownvalue = newValue!;
+                  });
+                },),
             const SizedBox(height: 20),
             CustomField(
               icon: const Icon(Icons.numbers),
