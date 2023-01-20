@@ -64,6 +64,8 @@ class _HomePageState extends State<HomePage> {
                     sexValue = newValue!;
                   });
                 },
+                isExpanded: true,
+                underline: Container(),
               ),
             ),
             const SizedBox(height: 20),
