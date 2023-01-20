@@ -115,7 +115,7 @@ class _CustomFieldState extends State<CustomField> {
             ),
         border: OutlineInputBorder(
           borderSide: BorderSide(
-            color: Colors.black,
+            width: 2,
           ),
           borderRadius: BorderRadius.circular(10),
         ),
