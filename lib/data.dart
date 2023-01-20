@@ -10,4 +10,4 @@ final TextEditingController stateOfOrigin = TextEditingController();
 final TextEditingController phoneNumber = TextEditingController();
 final TextEditingController email = TextEditingController();
 
-sex = ["Male"]
+List<sex = ["Male", "Female"]
