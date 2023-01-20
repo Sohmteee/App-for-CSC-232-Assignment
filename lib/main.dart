@@ -47,20 +47,22 @@ class _HomePageState extends State<HomePage> {
               hintText: "Surname",
             ),
             const SizedBox(height: 20),
-            DropdownButton(
-              value: sexValue,
-              items: sex.map((String items) {
-                return DropdownMenuItem(
-                  value: items,
-                  child: Text(items),
-                );
-              }).toList(),
-              onChanged: (String? newValue) {
-                setState(() {
-                  sexValue = newValue!;
-                });
-              },
-              hint: Text("Sex"),
+            DecoratedBox(
+              decoration: ,
+              child: DropdownButton(
+                value: sexValue,
+                items: sex.map((String items) {
+                  return DropdownMenuItem(
+                    value: items,
+                    child: Text(items),
+                  );
+                }).toList(),
+                onChanged: (String? newValue) {
+                  setState(() {
+                    sexValue = newValue!;
+                  });
+                },
+              ),
             ),
             const SizedBox(height: 20),
             CustomField(
