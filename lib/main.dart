@@ -49,8 +49,8 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(height: 20),
             DecoratedBox(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-              ),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all()),
               child: DropdownButton(
                 value: sexValue,
                 items: sex.map((String items) {
