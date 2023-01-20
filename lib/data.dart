@@ -7,5 +7,11 @@ final TextEditingController stateOfOrigin = TextEditingController();
 final TextEditingController phoneNumber = TextEditingController();
 final TextEditingController email = TextEditingController();
 
-List<String> sex = ["Male", "Female"];
-List<String> department = ["Male", "Female"];
+List<String> sex = [
+  "Male",
+  "Female",
+];
+List<String> department = [
+  "Computer Science",
+  "Library Science",
+];
