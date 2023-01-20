@@ -47,10 +47,11 @@ class _HomePageState extends State<HomePage> {
               hintText: "Surname",
             ),
             const SizedBox(height: 20),
+            
             CustomField(
               icon: const Icon(Icons.male_rounded),
               controller: sex,
-              hintText: "Se",
+              hintText: "Sex",
             ),
             const SizedBox(height: 20),
             CustomField(
