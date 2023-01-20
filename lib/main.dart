@@ -47,16 +47,20 @@ class _HomePageState extends State<HomePage> {
               hintText: "Surname",
             ),
             const SizedBox(height: 20),
-            DropdownButton(items: sex.map((String items) {
+            DropdownButton(
+              value: sexValue,
+              items: sex.map((String items) {
                 return DropdownMenuItem(
                   value: items,
                   child: Text(items),
                 );
-              }).toList(), onChanged: (String? newValue) {
-                  setState(() {
-                    sexValue = newValue!;
-                  });
-                },),
+              }).toList(),
+              onChanged: (String? newValue) {
+                setState(() {
+                  sexValue = newValue!;
+                });
+              },
+            ),
             const SizedBox(height: 20),
             CustomField(
               icon: const Icon(Icons.numbers),
