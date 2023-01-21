@@ -47,34 +47,31 @@ class _HomePageState extends State<HomePage> {
               hintText: "Surname",
             ),
             const SizedBox(height: 20),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(),
-              ),
-              child: Row(
-                children: [
-                  Icon(Icons.male),
-                  Expanded(
-                    child: DropdownButton(
-                      value: sexValue,
-                      items: sex.map((String items) {
-                        return DropdownMenuItem(
-                          value: items,
-                          child: Text(items),
-                        );
-                      }).toList(),
-                      onChanged: (String? newValue) {
-                        setState(() {
-                          sexValue = newValue!;
-                        });
-                      },
-                      isExpanded: true,
-                      underline: Container(),
-                    ),
+            Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(),
                   ),
-                ],
-              ),
+                  child: DropdownButton(
+                    value: sexValue,
+                    items: sex.map((String items) {
+                      return DropdownMenuItem(
+                        value: items,
+                        child: Text(items),
+                      );
+                    }).toList(),
+                    onChanged: (String? newValue) {
+                      setState(() {
+                        sexValue = newValue!;
+                      });
+                    },
+                    isExpanded: true,
+                    underline: Container(),
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: 20),
             CustomField(
