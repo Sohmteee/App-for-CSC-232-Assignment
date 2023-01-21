@@ -54,7 +54,8 @@ class _HomePageState extends State<HomePage> {
               ),
               child: Row(
                 children: [
-                  SizedBox(
+                  Icon(Icons.male),
+                  Expanded(
                     child: DropdownButton(
                       value: sexValue,
                       items: sex.map((String items) {
