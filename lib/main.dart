@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
             Row(
               children: [
                 SizedBox(
-                  width: 20,
+                  width: 50,
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
