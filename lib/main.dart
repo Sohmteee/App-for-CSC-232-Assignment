@@ -52,21 +52,25 @@ class _HomePageState extends State<HomePage> {
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(),
               ),
-              child: DropdownButton(
-                value: sexValue,
-                items: sex.map((String items) {
-                  return DropdownMenuItem(
-                    value: items,
-                    child: Text(items),
-                  );
-                }).toList(),
-                onChanged: (String? newValue) {
-                  setState(() {
-                    sexValue = newValue!;
-                  });
-                },
-                isExpanded: true,
-                underline: Container(),
+              child: Row(
+                children: [
+                  DropdownButton(
+                    value: sexValue,
+                    items: sex.map((String items) {
+                      return DropdownMenuItem(
+                        value: items,
+                        child: Text(items),
+                      );
+                    }).toList(),
+                    onChanged: (String? newValue) {
+                      setState(() {
+                        sexValue = newValue!;
+                      });
+                    },
+                    isExpanded: true,
+                    underline: Container(),
+                  ),
+                ],
               ),
             ),
             const SizedBox(height: 20),
