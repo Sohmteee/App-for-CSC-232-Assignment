@@ -49,26 +49,29 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(height: 20),
             Row(
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(),
-                  ),
-                  child: DropdownButton(
-                    value: sexValue,
-                    items: sex.map((String items) {
-                      return DropdownMenuItem(
-                        value: items,
-                        child: Text(items),
-                      );
-                    }).toList(),
-                    onChanged: (String? newValue) {
-                      setState(() {
-                        sexValue = newValue!;
-                      });
-                    },
-                    isExpanded: true,
-                    underline: Container(),
+                SizedBox(
+                  width: 20,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(),
+                    ),
+                    child: DropdownButton(
+                      value: sexValue,
+                      items: sex.map((String items) {
+                        return DropdownMenuItem(
+                          value: items,
+                          child: Text(items),
+                        );
+                      }).toList(),
+                      onChanged: (String? newValue) {
+                        setState(() {
+                          sexValue = newValue!;
+                        });
+                      },
+                      isExpanded: true,
+                      underline: Container(),
+                    ),
                   ),
                 ),
               ],
