@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Container(
-                  width: 120,
+                  width: 200,
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
                   child: DropdownButton(
                     value: departmentValue,
                     hint: Text("Department"),
-                    items: sex.map((String items) {
+                    items: department.map((String items) {
                       return DropdownMenuItem(
                         value: items,
                         child: Text(items),
