@@ -50,6 +50,7 @@ class _HomePageState extends State<HomePage> {
             Row(
               children: [
                 Icon(Icons.male),
+                Icon(Icons.female),
                 Container(
                   width: 120,
                   padding: const EdgeInsets.symmetric(horizontal: 20),
