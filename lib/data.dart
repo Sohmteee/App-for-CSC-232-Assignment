@@ -20,4 +20,7 @@ List<String> department = [
 List<String> stateOfOrigin = [
   "Abia",
   "Anambra",
+  "Anambra",
+  "Anambra",
+  "Imo",
 ];
