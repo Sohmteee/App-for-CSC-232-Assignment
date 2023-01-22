@@ -117,9 +117,9 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               child: DropdownButton(
-                value: sexValue,
+                value: stateOfOrginValue,
                 hint: Text("Statte of Origin"),
-                items: sex.map((String items) {
+                items: stateOfOrgin.map((String items) {
                   return DropdownMenuItem(
                     value: items,
                     child: Text(items),
