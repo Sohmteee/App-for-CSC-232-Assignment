@@ -49,6 +49,7 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(height: 20),
             Row(
               children: [
+                Icon
                 Container(
                   width: 120,
                   padding: const EdgeInsets.symmetric(horizontal: 20),
