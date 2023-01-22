@@ -53,7 +53,9 @@ class _HomePageState extends State<HomePage> {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
                     ),
                     child: DropdownButton(
                       value: sexValue,
