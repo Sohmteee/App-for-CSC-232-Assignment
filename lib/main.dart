@@ -51,6 +51,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Expanded(
                   child: Container(
+                    
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
@@ -62,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                       items: sex.map((String items) {
                         return DropdownMenuItem(
                           value: items,
-                          
+
                           child: Text(items),
                         );
                       }).toList(),
