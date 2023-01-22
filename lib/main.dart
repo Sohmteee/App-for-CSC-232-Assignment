@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: DropdownButton(
                     value: sexValue,
-                    hint: Text("Sex"),
+                    hint: const Text("Sex"),
                     items: sex.map((String items) {
                       return DropdownMenuItem(
                         value: items,
@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: DropdownButton(
                     value: departmentValue,
-                    hint: Text("Department"),
+                    hint: const Text("Department"),
                     items: department.map((String items) {
                       return DropdownMenuItem(
                         value: items,
@@ -118,7 +118,7 @@ class _HomePageState extends State<HomePage> {
               ),
               child: DropdownButton(
                 value: stateOfOriginValue,
-                hint: Text("State of Origin"),
+                hint: const Text("State of Origin"),
                 items: stateOfOrigin.map((String items) {
                   return DropdownMenuItem(
                     value: items,
