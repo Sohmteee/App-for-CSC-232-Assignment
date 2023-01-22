@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
             Row(
               children: [
                 Container(
-                  width: 100,
+                  width: 120,
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
