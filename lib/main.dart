@@ -76,6 +76,33 @@ class _HomePageState extends State<HomePage> {
                     underline: Container(),
                   ),
                 ),
+                Container(
+                  width: 120,
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  child: DropdownButton(
+                    value: sexValue,
+                    hint: Text("Department"),
+                    items: sex.map((String items) {
+                      return DropdownMenuItem(
+                        value: items,
+                        child: Text(items),
+                      );
+                    }).toList(),
+                    onChanged: (String? newValue) {
+                      setState(() {
+                        sexValue = newValue!;
+                      });
+                    },
+                    isExpanded: true,
+                    underline: Container(),
+                  ),
+                ),
               ],
             ),
             const SizedBox(height: 20),
