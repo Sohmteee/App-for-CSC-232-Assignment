@@ -8,6 +8,7 @@ final TextEditingController phoneNumber = TextEditingController();
 final TextEditingController email = TextEditingController();
 
 String? sexValue;
+String? departmentValue
 List<String> sex = [
   "Male",
   "Female",
