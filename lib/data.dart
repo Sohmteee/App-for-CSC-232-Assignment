@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 final TextEditingController firstName = TextEditingController();
 final TextEditingController lastName = TextEditingController();
 final TextEditingController regNo = TextEditingController();
-final TextEditingController stateOfOrigin = TextEditingController();
 final TextEditingController phoneNumber = TextEditingController();
 final TextEditingController email = TextEditingController();
 
@@ -19,6 +18,6 @@ List<String> department = [
   "Library Science",
 ];
 List<String> stateOfOrigin = [
-  "Computer Science",
-  "Library Science",
+  "Abia",
+  "Anambra",
 ];
