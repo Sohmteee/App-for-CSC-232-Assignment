@@ -8,6 +8,7 @@ final TextEditingController email = TextEditingController();
 
 String? sexValue;
 String? departmentValue;
+String? stateOfOriginValue;
 
 List<String> sex = [
   "Male",
