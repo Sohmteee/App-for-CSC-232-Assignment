@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: DropdownButton(
                     value: sexValue,
-                    hint: Text,
+                    hint: Text("Sex"),
                     items: sex.map((String items) {
                       return DropdownMenuItem(
                         value: items,
