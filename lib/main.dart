@@ -48,6 +48,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   width: 120,
