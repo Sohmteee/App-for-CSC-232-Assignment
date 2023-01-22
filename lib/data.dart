@@ -18,3 +18,7 @@ List<String> department = [
   "Computer Science",
   "Library Science",
 ];
+List<String> stateOfOrigin = [
+  "Computer Science",
+  "Library Science",
+];
