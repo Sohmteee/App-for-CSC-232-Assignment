@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Expanded(
                   child: Container(
-                    
+                    padding: ei
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
