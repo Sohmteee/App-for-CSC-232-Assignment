@@ -49,31 +49,30 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(height: 20),
             Row(
               children: [
-                Expanded(
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(
-                        color: Colors.grey,
-                      ),
+                Container(
+                  width: 300,
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                      color: Colors.grey,
                     ),
-                    child: DropdownButton(
-                      value: sexValue,
-                      items: sex.map((String items) {
-                        return DropdownMenuItem(
-                          value: items,
-                          child: Text(items),
-                        );
-                      }).toList(),
-                      onChanged: (String? newValue) {
-                        setState(() {
-                          sexValue = newValue!;
-                        });
-                      },
-                      isExpanded: true,
-                      underline: Container(),
-                    ),
+                  ),
+                  child: DropdownButton(
+                    value: sexValue,
+                    items: sex.map((String items) {
+                      return DropdownMenuItem(
+                        value: items,
+                        child: Text(items),
+                      );
+                    }).toList(),
+                    onChanged: (String? newValue) {
+                      setState(() {
+                        sexValue = newValue!;
+                      });
+                    },
+                    isExpanded: true,
+                    underline: Container(),
                   ),
                 ),
               ],
