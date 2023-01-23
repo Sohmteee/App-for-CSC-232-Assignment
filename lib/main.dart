@@ -37,12 +37,13 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             CustomField(
-              keyboardType: Te,
+              keyboardType: TextInputType.name,
               controller: firstName,
               hintText: "First Name",
             ),
             const SizedBox(height: 7),
             CustomField(
+              keyboardType: TextInputType.name,
               controller: lastName,
               hintText: "Surname",
             ),
@@ -136,6 +137,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
+              keyboardType: TextInputType.number,
               controller: regNo,
               hintText: "Reg Number",
             ),
