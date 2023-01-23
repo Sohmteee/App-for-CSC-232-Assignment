@@ -164,7 +164,7 @@ class _HomePageState extends State<HomePage> {
 class CustomField extends StatefulWidget {
   const CustomField({
     super.key,
-    this.preffix ?? null,
+    this.preffix,
     required this.hintText,
     required this.controller,
     required this.keyboardType,
@@ -173,7 +173,7 @@ class CustomField extends StatefulWidget {
   final String hintText;
   final TextEditingController controller;
   final TextInputType keyboardType;
-  final Widget preffix;
+  final Widget? preffix;
 
   @override
   State<CustomField> createState() => _CustomFieldState();
