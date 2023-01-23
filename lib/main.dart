@@ -158,7 +158,7 @@ class _HomePageState extends State<HomePage> {
               value: bypass,
               onChanged: (value) {
                 setState(() {
-                  bypass = value;
+                  bypass = value!;
                 });
               },
             )
