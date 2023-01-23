@@ -143,11 +143,13 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
+              keyboardType: TextInputType.phone,
               controller: regNo,
               hintText: "Phone Number",
             ),
             const SizedBox(height: 20),
             CustomField(
+              keyboardType: TextInputType.emailAddress,
               controller: regNo,
               hintText: "Email",
             ),
