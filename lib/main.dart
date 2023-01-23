@@ -179,6 +179,7 @@ class _CustomFieldState extends State<CustomField> {
           widget.controller.text = value;
         });
       },
+      inputFormatters: [],
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
