@@ -37,6 +37,7 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             CustomField(
+              keyboardType: Te,
               controller: firstName,
               hintText: "First Name",
             ),
@@ -161,11 +162,12 @@ class CustomField extends StatefulWidget {
     super.key,
     required this.hintText,
     required this.controller,
+    required this.keyboardType,
   });
 
   final String hintText;
   final TextEditingController controller;
-  final textIn
+  final TextInputType keyboardType;
 
   @override
   State<CustomField> createState() => _CustomFieldState();
@@ -187,7 +189,6 @@ class _CustomFieldState extends State<CustomField> {
         ),
         hintText: widget.hintText,
         labelText: widget.hintText,
-        
       ),
     );
   }
