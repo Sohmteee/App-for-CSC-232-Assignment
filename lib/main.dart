@@ -154,6 +154,7 @@ class _HomePageState extends State<HomePage> {
               hintText: "Email",
             ),
             const SizedBox(height: 7),
+            Checkbox(value: value, onChanged: onChanged)
           ],
         ),
       ),
