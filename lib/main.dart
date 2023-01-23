@@ -161,7 +161,7 @@ class _HomePageState extends State<HomePage> {
                   bypass = value!;
                 });
               },
-              shape: ,
+              shape: RoundedRectangleBorder(),
             )
           ],
         ),
