@@ -6,6 +6,8 @@ final TextEditingController regNo = TextEditingController();
 final TextEditingController phoneNumber = TextEditingController();
 final TextEditingController email = TextEditingController();
 
+bool? bypass;
+
 String? sexValue;
 String? departmentValue;
 String? stateOfOriginValue;
