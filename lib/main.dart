@@ -195,7 +195,7 @@ class _CustomFieldState extends State<CustomField> {
         ),
         hintText: widget.hintText,
         labelText: widget.hintText,
-        prefix: widget.preffix,
+        prefix: widget.preffix ?? null,
       ),
     );
   }
