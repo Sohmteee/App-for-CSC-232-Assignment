@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
               keyboardType: TextInputType.number,
               controller: regNo,
               hintText: "Reg Number",
-              preffix: ,
+              preffix: Text("2020514"),
             ),
             const SizedBox(height: 20),
             CustomField(
