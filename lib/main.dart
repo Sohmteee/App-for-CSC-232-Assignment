@@ -173,7 +173,7 @@ class CustomField extends StatefulWidget {
   final String hintText;
   final TextEditingController controller;
   final TextInputType keyboardType;
-  final 
+  final Widget preffix;
 
   @override
   State<CustomField> createState() => _CustomFieldState();
@@ -195,7 +195,7 @@ class _CustomFieldState extends State<CustomField> {
         ),
         hintText: widget.hintText,
         labelText: widget.hintText,
-        prefix: 
+        prefix: widget.
       ),
     );
   }
