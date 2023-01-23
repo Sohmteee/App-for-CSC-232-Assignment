@@ -37,7 +37,6 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             CustomField(
-              icon: const Icon(Icons.person),
               controller: firstName,
               hintText: "First Name",
             ),
@@ -136,7 +135,6 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             CustomField(
-              icon: const Icon(Icons.numbers),
               controller: regNo,
               hintText: "Reg Number",
             ),
@@ -172,10 +170,6 @@ class _CustomFieldState extends State<CustomField> {
         });
       },
       decoration: InputDecoration(
-        icon: widget.icon ??
-            const SizedBox(
-              width: 20,
-            ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
         ),
