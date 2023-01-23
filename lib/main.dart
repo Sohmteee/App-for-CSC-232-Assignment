@@ -165,6 +165,7 @@ class CustomField extends StatefulWidget {
 
   final String hintText;
   final TextEditingController controller;
+  final textIn
 
   @override
   State<CustomField> createState() => _CustomFieldState();
@@ -179,7 +180,7 @@ class _CustomFieldState extends State<CustomField> {
           widget.controller.text = value;
         });
       },
-      keyboardType: ,
+      keyboardType: widget.keyboardType,
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
