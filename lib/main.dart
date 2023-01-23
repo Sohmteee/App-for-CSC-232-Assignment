@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
               hintText: "Email",
             ),
             const SizedBox(height: 7),
-            CheckboxListTile(
+            Checkbox(
               value: bypass,
               onChanged: (value) {
                 setState(() {
