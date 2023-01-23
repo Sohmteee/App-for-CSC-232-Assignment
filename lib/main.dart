@@ -138,6 +138,16 @@ class _HomePageState extends State<HomePage> {
               controller: regNo,
               hintText: "Reg Number",
             ),
+            const SizedBox(height: 20),
+            CustomField(
+              controller: regNo,
+              hintText: "Phone Number",
+            ),
+            const SizedBox(height: 20),
+            CustomField(
+              controller: regNo,
+              hintText: "Email",
+            ),
             const SizedBox(height: 7),
           ],
         ),
