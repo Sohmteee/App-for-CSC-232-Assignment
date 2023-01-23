@@ -154,16 +154,21 @@ class _HomePageState extends State<HomePage> {
               hintText: "Email",
             ),
             const SizedBox(height: 7),
-            Checkbox(
-              value: bypass,
-              onChanged: (value) {
-                setState(() {
-                  bypass = value!;
-                });
-              },
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(7),
-              ),
+            Row(
+              children: [
+                Checkbox(
+                  value: bypass,
+                  onChanged: (value) {
+                    setState(() {
+                      bypass = value!;
+                    });
+                  },
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(7),
+                  ),
+                ),
+                co
+              ],
             )
           ],
         ),
