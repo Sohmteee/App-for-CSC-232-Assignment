@@ -179,7 +179,7 @@ class _CustomFieldState extends State<CustomField> {
           widget.controller.text = value;
         });
       },
-      inputFormatters: [],
+      keyboardType: ,
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
