@@ -164,7 +164,7 @@ class _HomePageState extends State<HomePage> {
 class CustomField extends StatefulWidget {
   const CustomField({
     super.key,
-    this.preffix,
+    this.preffix ?? null,
     required this.hintText,
     required this.controller,
     required this.keyboardType,
@@ -195,7 +195,7 @@ class _CustomFieldState extends State<CustomField> {
         ),
         hintText: widget.hintText,
         labelText: widget.hintText,
-        prefix: widget.
+        prefix: widget.preffix,
       ),
     );
   }
