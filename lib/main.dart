@@ -162,7 +162,7 @@ class _HomePageState extends State<HomePage> {
                 });
               },
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(9),
+                borderRadius: BorderRadius.circular(7),
               ),
             )
           ],
