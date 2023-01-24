@@ -181,7 +181,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {},
               child: Container(
                 width: 200,
-                height: 100,
+                height: 70,
                 decoration: BoxDecoration(
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(20),
