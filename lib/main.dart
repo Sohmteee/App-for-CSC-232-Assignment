@@ -177,7 +177,10 @@ class _HomePageState extends State<HomePage> {
                 MaterialButton(
                   onPressed: () {},
                   child: Container(
-                    dec
+                    decoration: const BoxDecoration(
+                      color: Colors.blue,
+                      
+                    ),
                   ),
                 ),
               ],
