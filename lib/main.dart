@@ -186,7 +186,10 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: const Center(
-                  child: Text("Submit"),
+                  child: Text(
+                    "Submit",
+                    style: TextStyle(color: Colors.white,),
+                  ),
                 ),
               ),
             ),
