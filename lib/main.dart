@@ -188,7 +188,10 @@ class _HomePageState extends State<HomePage> {
                 child: const Center(
                   child: Text(
                     "Submit",
-                    style: TextStyle(color: Colors.white,),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
               ),
