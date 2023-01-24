@@ -167,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(7),
                   ),
                 ),
-                co
+                const SizedBox(width: 20),
               ],
             )
           ],
