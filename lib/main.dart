@@ -167,7 +167,6 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(7),
                   ),
                 ),
-                const SizedBox(width: 20),
                 const Text("Bypass empty fields",
                     style: TextStyle(
                       fontSize: 16,
