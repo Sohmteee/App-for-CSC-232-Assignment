@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                     }).toList(),
                     onChanged: (String? newValue) {
                       setState(() {
-                        sexValue = newValue!;
+                        departmentValue = newValue!;
                       });
                     },
                     isExpanded: true,
