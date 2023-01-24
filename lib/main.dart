@@ -185,7 +185,9 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: const Text("Submit"),
+                child: const Center(
+                  child: Text("Submit"),
+                ),
               ),
             ),
           ],
