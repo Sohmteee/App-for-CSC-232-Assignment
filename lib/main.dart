@@ -174,19 +174,20 @@ class _HomePageState extends State<HomePage> {
                     fontSize: 16,
                   ),
                 ),
-                MaterialButton(
-                  onPressed: () {},
-                  child: Container(
-                    width: 200,
-                    height: 100,
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                ),
+                
               ],
-            )
+            ),
+            MaterialButton(
+              onPressed: () {},
+              child: Container(
+                width: 200,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
+            ),
           ],
         ),
       ),
