@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'CSC 232 Assignment',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        
       ),
       home: const HomePage(),
       debugShowCheckedModeBanner: false,
