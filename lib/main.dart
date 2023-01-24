@@ -176,7 +176,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            const SizedBox(height: 7),
+            const SizedBox(height: 15),
             MaterialButton(
               onPressed: () {},
               child: Container(
