@@ -152,7 +152,7 @@ class _HomePageState extends State<HomePage> {
             CustomField(
               keyboardType: TextInputType.emailAddress,
               controller: regNo,
-              hintText: "Email",
+              hintText: "Email Address",
             ),
             const SizedBox(height: 7),
             Row(
