@@ -82,32 +82,10 @@ class _HomePageState extends State<HomePage> {
                     underline: Container(),
                   ),
                 ),
-                Container(
-                  width: 200,
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(
-                      color: Colors.grey,
-                    ),
-                  ),
-                  child: DropdownButton(
-                    value: departmentValue,
-                    hint: const Text("Department"),
-                    items: department.map((String items) {
-                      return DropdownMenuItem(
-                        value: items,
-                        child: Text(items),
-                      );
-                    }).toList(),
-                    onChanged: (String? newValue) {
-                      setState(() {
-                        departmentValue = newValue!;
-                      });
-                    },
-                    isExpanded: true,
-                    underline: Container(),
-                  ),
+                CustomDropDown(
+                  hint: "Department",
+                  value: departmentValue,
+                  data: department,
                 ),
               ],
             ),
