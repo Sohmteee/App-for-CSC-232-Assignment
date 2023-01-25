@@ -117,33 +117,6 @@ class _HomePageState extends State<HomePage> {
               value: stateOfOriginValue,
               data: stateOfOrigin,
             ),
-            Container(
-              width: 120,
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(
-                  color: Colors.grey,
-                ),
-              ),
-              child: DropdownButton(
-                value: stateOfOriginValue,
-                hint: const Text("State of Origin"),
-                items: stateOfOrigin.map((String items) {
-                  return DropdownMenuItem(
-                    value: items,
-                    child: Text(items),
-                  );
-                }).toList(),
-                onChanged: (String? newValue) {
-                  setState(() {
-                    stateOfOriginValue = newValue!;
-                  });
-                },
-                isExpanded: true,
-                underline: Container(),
-              ),
-            ),
             const SizedBox(height: 20),
             CustomField(
               keyboardType: TextInputType.number,
