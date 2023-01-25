@@ -55,32 +55,12 @@ class _HomePageState extends State<HomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  width: 120,
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(
-                      color: Colors.grey,
-                    ),
-                  ),
-                  child: DropdownButton(
-                    value: sexValue,
-                    hint: const Text("Sex"),
-                    items: sex.map((String items) {
-                      return DropdownMenuItem(
-                        value: items,
-                        child: Text(items),
-                      );
-                    }).toList(),
-                    onChanged: (String? newValue) {
-                      setState(() {
-                        sexValue = newValue!;
-                      });
-                    },
-                    isExpanded: true,
-                    underline: Container(),
-                  ),
+                
+                CustomDropDown(
+                  hint: "Sex",
+                  value: departmentValue,
+                  data: department,
+                  width: 200,
                 ),
                 CustomDropDown(
                   hint: "Department",
