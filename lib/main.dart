@@ -112,7 +112,11 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             const SizedBox(height: 20),
-            CustomDropDown(hint: "State of Origin", value: stateOfOriginValue, data: data)
+            CustomDropDown(
+              hint: "State of Origin",
+              value: stateOfOriginValue,
+              data: stateOfOrigin,
+            ),
             Container(
               width: 120,
               padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -206,5 +210,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
