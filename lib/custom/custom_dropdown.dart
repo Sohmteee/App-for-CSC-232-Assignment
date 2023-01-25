@@ -31,8 +31,8 @@ class _CustomDropDownState extends State<CustomDropDown> {
       ),
       child: DropdownButton(
         value: stateOfOriginValue,
-        hint: const Text("State of Origin"),
-        items: stateOfOrigin.map((String items) {
+        hint:  Text(widget.hint),
+        items: widget.data.map((String items) {
           return DropdownMenuItem(
             value: items,
             child: Text(items),
