@@ -86,6 +86,7 @@ class _HomePageState extends State<HomePage> {
                   hint: "Department",
                   value: departmentValue,
                   data: department,
+                  width: 200,
                 ),
               ],
             ),
