@@ -5,10 +5,13 @@ class CustomDropDown extends StatefulWidget {
   const CustomDropDown({
     super.key,
     required this.hint,
+    required this.value,
+    required this.data,
   });
 
   final String hint;
-  final 
+  final String? value;
+  final List<String> data;
 
   @override
   State<CustomDropDown> createState() => _CustomDropDownState();
