@@ -2,7 +2,7 @@ import 'package:app_for_csc_232_assignment/data.dart';
 import 'package:flutter/material.dart';
 
 class CustomDropDown extends StatefulWidget {
-  const CustomDropDown({
+  CustomDropDown({
     super.key,
     required this.hint,
     required this.value,
@@ -10,7 +10,7 @@ class CustomDropDown extends StatefulWidget {
   });
 
   final String hint;
-  final String? value;
+  String? value;
   final List<String> data;
 
   @override
@@ -31,7 +31,7 @@ class _CustomDropDownState extends State<CustomDropDown> {
       ),
       child: DropdownButton(
         value: widget.value,
-        hint:  Text(widget.hint),
+        hint: Text(widget.hint),
         items: widget.data.map((String items) {
           return DropdownMenuItem(
             value: items,
