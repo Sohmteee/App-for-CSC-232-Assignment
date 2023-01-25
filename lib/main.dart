@@ -55,12 +55,11 @@ class _HomePageState extends State<HomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                
                 CustomDropDown(
                   hint: "Sex",
-                  value: departmentValue,
-                  data: department,
-                  width: 200,
+                  value: sexValue,
+                  data: sex,
+                  width: 120,
                 ),
                 CustomDropDown(
                   hint: "Department",
