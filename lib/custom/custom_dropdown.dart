@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 class CustomDropDown extends StatefulWidget {
   CustomDropDown({
     super.key,
-    this
+    this.width,
     required this.hint,
     required this.value,
     required this.data,
   });
 
+final width
   final String hint;
   String? value;
   final List<String> data;
