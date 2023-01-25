@@ -1,3 +1,4 @@
+import 'package:app_for_csc_232_assignment/custom/custom_dropdown.dart';
 import 'package:app_for_csc_232_assignment/data.dart';
 import 'package:flutter/material.dart';
 
@@ -111,6 +112,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             const SizedBox(height: 20),
+            CustomDropDown(hint: "State of Origin", value: stateOfOriginValue, data: data)
             Container(
               width: 120,
               padding: const EdgeInsets.symmetric(horizontal: 20),
