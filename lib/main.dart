@@ -83,9 +83,9 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 CustomDropDown(
-                  hint: "State of Origin",
-                  value: stateOfOriginValue,
-                  data: stateOfOrigin,
+                  hint: "Department",
+                  value: departmentValue,
+                  data: department,
                 ),
               ],
             ),
