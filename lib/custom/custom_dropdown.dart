@@ -4,8 +4,11 @@ import 'package:flutter/material.dart';
 class CustomDropDown extends StatefulWidget {
   const CustomDropDown({
     super.key,
-    required this.
+    required this.hint,
   });
+
+  final String hint;
+  final 
 
   @override
   State<CustomDropDown> createState() => _CustomDropDownState();
