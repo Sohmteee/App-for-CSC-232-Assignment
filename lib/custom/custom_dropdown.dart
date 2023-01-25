@@ -30,7 +30,7 @@ class _CustomDropDownState extends State<CustomDropDown> {
         ),
       ),
       child: DropdownButton(
-        value: widget.,
+        value: widget.value,
         hint:  Text(widget.hint),
         items: widget.data.map((String items) {
           return DropdownMenuItem(
@@ -40,7 +40,7 @@ class _CustomDropDownState extends State<CustomDropDown> {
         }).toList(),
         onChanged: (String? newValue) {
           setState(() {
-            widget. = newValue!;
+            widget.value = newValue!;
           });
         },
         isExpanded: true,
