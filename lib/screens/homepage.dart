@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
                 controller: firstName,
                 hintText: "First Name",
               ),
-              const SizedBox(height: .3),
+              const SizedBox(height: 20),
               CustomField(
                 keyboardType: TextInputType.name,
                 controller: lastName,
