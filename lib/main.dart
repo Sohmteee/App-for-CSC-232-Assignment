@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'screens/homepage.dart';
 
-void main() {
+void main async() {
+  await Hive.initFlutter();
   runApp(const MyApp());
 }
 
