@@ -40,6 +40,7 @@ class _HomePageState extends State<HomePage> {
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               CustomField(
                 keyboardType: TextInputType.name,
