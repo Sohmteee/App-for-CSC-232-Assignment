@@ -5,25 +5,25 @@ class Student extends HiveObject {
   @HiveField(0)
   String firstName;
 
-  @HiveField(0)
+  @HiveField(1)
   String lastName;
 
-  @HiveField(0)
+  @HiveField(2)
   String sex;
 
-  @HiveField(0)
+  @HiveField(3)
   String department;
 
-  @HiveField(0)
+  @HiveField(4)
   String email;
 
-  @HiveField(0)
+  @HiveField(5)
   int regNumber;
 
-  @HiveField(0)
+  @HiveField(6)
   int phone;
 
-  @HiveField(0)
+  @HiveField(7)
 
   Student({
     required this.firstName,
