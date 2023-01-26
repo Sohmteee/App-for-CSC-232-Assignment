@@ -1,8 +1,4 @@
-import 'package:app_for_csc_232_assignment/custom/custom_dropdown.dart';
-import 'package:app_for_csc_232_assignment/data.dart';
 import 'package:flutter/material.dart';
-
-import 'custom/custom_field.dart';
 import 'screens/homepage.dart';
 
 void main() {
@@ -25,5 +21,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
