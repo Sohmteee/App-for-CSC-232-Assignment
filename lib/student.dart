@@ -1,1 +1,5 @@
-class Student extends HiveO
+import 'package:hive/hive.dart';
+
+class Student extends HiveObject {
+  String firstName;
+}
