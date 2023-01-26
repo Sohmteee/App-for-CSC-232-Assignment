@@ -2,6 +2,7 @@ import 'package:hive/hive.dart';
 
 @HiveType(typeId: 0)
 class Student extends HiveObject {
+  @HiveField(0)
   String firstName;
   String lastName;
   String sex;
