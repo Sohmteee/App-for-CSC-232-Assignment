@@ -4,5 +4,5 @@ class Student extends HiveObject {
   String firstName, lastName, sex, email;
   int regNumber, phone;
 
-  Student({fir})
+  Student({required this.firstName,required this.firstName,required this.firstName,required this.firstName,})
 }
