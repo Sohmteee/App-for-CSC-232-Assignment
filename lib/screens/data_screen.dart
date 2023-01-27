@@ -57,10 +57,10 @@ class _DataScreenState extends State<DataScreen> {
                               Text(cell.sex),
                             ),
                             DataCell(
-                              Text(cell.firstName),
+                              Text(cell.department),
                             ),
                             DataCell(
-                              Text(cell.firstName),
+                              Text(cell.),
                             ),
                             DataCell(
                               Text(cell.firstName),
