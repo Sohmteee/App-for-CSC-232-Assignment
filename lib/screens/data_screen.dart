@@ -19,6 +19,7 @@ class _DataScreenState extends State<DataScreen> {
             ),
             Scrollbar(
               child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
                 children: [
                   DataTable(
                     columns: const [
