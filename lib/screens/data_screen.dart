@@ -48,13 +48,13 @@ class _DataScreenState extends State<DataScreen> {
                     .map((cell) => DataRow(
                           cells: [
                             DataCell(
-                              Text(cell.firstName),
+                              Text(cell.regNumber.toString()),
                             ),
                             DataCell(
                               Text(cell.firstName),
                             ),
                             DataCell(
-                              Text(cell.firstName),
+                              Text(cell.sex),
                             ),
                             DataCell(
                               Text(cell.firstName),
