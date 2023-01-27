@@ -21,6 +21,12 @@ class _DataScreenState extends State<DataScreen> {
               DataColumn(
                 label: Text("Reg Number"),
               ),
+              DataColumn(
+                label: Text("Name"),
+              ),
+              DataColumn(
+                label: Text("Sex"),
+              ),
             ], rows: rows)
           ],
         ),
