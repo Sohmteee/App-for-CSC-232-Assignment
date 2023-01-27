@@ -30,6 +30,7 @@ class Student extends HiveObject {
     required this.lastName,
     required this.sex,
     required this.department,
+    required this.stateOfOrigin,
     required this.regNumber,
     required this.phone,
     required this.email,
