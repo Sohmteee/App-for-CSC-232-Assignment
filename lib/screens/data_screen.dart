@@ -10,6 +10,12 @@ class DataScreen extends StatefulWidget {
 class _DataScreenState extends State<DataScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }
