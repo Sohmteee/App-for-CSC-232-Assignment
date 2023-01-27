@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'student.dart';
+
 final TextEditingController firstName = TextEditingController();
 final TextEditingController lastName = TextEditingController();
 final TextEditingController regNo = TextEditingController();
@@ -57,4 +59,8 @@ List<String> stateOfOrigin = [
   "Taraba",
   "Yobe",
   "Zamfara"
+];
+
+List<Student> testStudentList = [
+  Stud
 ];
