@@ -68,7 +68,7 @@ List<Student> testStudentList = [
     sex: "Male",
     department: "Computer Science",
     regNumber: 2020514006,
-    phone: 08063828438,
+    phone: "08063828438",
     email: "somto@gmail.com",
   ),
 ];
