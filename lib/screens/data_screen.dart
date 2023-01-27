@@ -27,6 +27,12 @@ class _DataScreenState extends State<DataScreen> {
               DataColumn(
                 label: Text("Sex"),
               ),
+              DataColumn(
+                label: Text("Department"),
+              ),
+              DataColumn(
+                label: Text("Stae of Origin"),
+              ),
             ], rows: rows)
           ],
         ),
