@@ -46,7 +46,9 @@ class _DataScreenState extends State<DataScreen> {
                 ],
                 rows: testStudentList
                     .map((cell) => DataRow(
-                          cells: [],
+                          cells: [
+                            DataCell(child)
+                          ],
                         ))
                     .toList(),
               ),
