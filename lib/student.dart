@@ -21,7 +21,7 @@ class Student extends HiveObject {
   int regNumber;
 
   @HiveField(6)
-  int phone;
+  String phone;
 
   @HiveField(7)
 
