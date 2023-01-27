@@ -13,7 +13,9 @@ class _DataScreenState extends State<DataScreen> {
     return Scaffold(
       body: SafeArea(
         child: ListView(
-          children: [],
+          children: [
+            Center()
+          ],
         ),
       ),
     );
