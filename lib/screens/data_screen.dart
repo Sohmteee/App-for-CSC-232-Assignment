@@ -17,31 +17,33 @@ class _DataScreenState extends State<DataScreen> {
             const Center(
               child: Text("Student List"),
             ),
-            DataTable(
-              columns: const [
-                DataColumn(
-                  label: Text("Reg Number"),
-                ),
-                DataColumn(
-                  label: Text("Name"),
-                ),
-                DataColumn(
-                  label: Text("Sex"),
-                ),
-                DataColumn(
-                  label: Text("Department"),
-                ),
-                DataColumn(
-                  label: Text("Stae of Origin"),
-                ),
-                DataColumn(
-                  label: Text("Phone Number"),
-                ),
-                DataColumn(
-                  label: Text("Email Address"),
-                ),
-              ],
-              rows: [],
+            Scrollbar(
+              child: DataTable(
+                columns: const [
+                  DataColumn(
+                    label: Text("Reg Number"),
+                  ),
+                  DataColumn(
+                    label: Text("Name"),
+                  ),
+                  DataColumn(
+                    label: Text("Sex"),
+                  ),
+                  DataColumn(
+                    label: Text("Department"),
+                  ),
+                  DataColumn(
+                    label: Text("Stae of Origin"),
+                  ),
+                  DataColumn(
+                    label: Text("Phone Number"),
+                  ),
+                  DataColumn(
+                    label: Text("Email Address"),
+                  ),
+                ],
+                rows: [],
+              ),
             )
           ],
         ),
