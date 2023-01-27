@@ -14,7 +14,7 @@ class _DataScreenState extends State<DataScreen> {
       body: SafeArea(
         child: ListView(
           children: [
-            Center()
+            Center(child: ,)
           ],
         ),
       ),
