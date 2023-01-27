@@ -45,28 +45,28 @@ class _DataScreenState extends State<DataScreen> {
                   ),
                 ],
                 rows: testStudentList
-                    .map((cell) => DataRow(
+                    .map((student) => DataRow(
                           cells: [
                             DataCell(
-                              Text(cell.regNumber.toString()),
+                              Text(student.regNumber.toString()),
                             ),
                             DataCell(
-                              Text(cell.firstName),
+                              Text(student.firstName),
                             ),
                             DataCell(
-                              Text(cell.sex),
+                              Text(student.sex),
                             ),
                             DataCell(
-                              Text(cell.department),
+                              Text(student.department),
                             ),
                             DataCell(
-                              Text(cell.stateOfOrigin),
+                              Text(student.stateOfOrigin),
                             ),
                             DataCell(
-                              Text(cell.firstName),
+                              Text(student.firstName),
                             ),
                             DataCell(
-                              Text(cell.firstName),
+                              Text(student.firstName),
                             ),
                           ],
                         ))
