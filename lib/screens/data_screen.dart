@@ -44,7 +44,7 @@ class _DataScreenState extends State<DataScreen> {
                     label: Text("Email Address"),
                   ),
                 ],
-                rows: testStudentList.map((e) => null.to),
+                rows: testStudentList.map(() => null).toList(),
               ),
             )
           ],
