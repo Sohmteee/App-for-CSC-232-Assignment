@@ -1,3 +1,4 @@
+import 'package:app_for_csc_232_assignment/data.dart';
 import 'package:flutter/material.dart';
 
 class DataScreen extends StatefulWidget {
@@ -43,9 +44,7 @@ class _DataScreenState extends State<DataScreen> {
                     label: Text("Email Address"),
                   ),
                 ],
-                rows: [
-                  
-                ],
+                rows: testStudentList.map((e) => null.to),
               ),
             )
           ],
