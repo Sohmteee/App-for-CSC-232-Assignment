@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'screens/homepage.dart';
 
-void main () async {
+void main() async {
   await Hive.initFlutter();
+  await Hive.openBox('myBox');
   runApp(const MyApp());
 }
 
