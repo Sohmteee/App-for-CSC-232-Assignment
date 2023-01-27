@@ -19,35 +19,33 @@ class _DataScreenState extends State<DataScreen> {
             ),
             Scrollbar(
               child: SingleChildScrollView(
-                scrollDirection: Axi,
-                children: [
-                  DataTable(
-                    columns: const [
-                      DataColumn(
-                        label: Text("Reg Number"),
-                      ),
-                      DataColumn(
-                        label: Text("Name"),
-                      ),
-                      DataColumn(
-                        label: Text("Sex"),
-                      ),
-                      DataColumn(
-                        label: Text("Department"),
-                      ),
-                      DataColumn(
-                        label: Text("Stae of Origin"),
-                      ),
-                      DataColumn(
-                        label: Text("Phone Number"),
-                      ),
-                      DataColumn(
-                        label: Text("Email Address"),
-                      ),
-                    ],
-                    rows: [],
-                  ),
-                ],
+                scrollDirection: Axis.horizontal,
+                child: DataTable(
+                  columns: const [
+                    DataColumn(
+                      label: Text("Reg Number"),
+                    ),
+                    DataColumn(
+                      label: Text("Name"),
+                    ),
+                    DataColumn(
+                      label: Text("Sex"),
+                    ),
+                    DataColumn(
+                      label: Text("Department"),
+                    ),
+                    DataColumn(
+                      label: Text("Stae of Origin"),
+                    ),
+                    DataColumn(
+                      label: Text("Phone Number"),
+                    ),
+                    DataColumn(
+                      label: Text("Email Address"),
+                    ),
+                  ],
+                  rows: [],
+                ),
               ),
             )
           ],
