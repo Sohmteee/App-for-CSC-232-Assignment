@@ -1,3 +1,4 @@
+import 'package:app_for_csc_232_assignment/screens/data_screen.dart';
 import 'package:flutter/material.dart';
 import '../custom/custom_dropdown.dart';
 import '../custom/custom_field.dart';
@@ -97,7 +98,14 @@ class _HomePageScreenState extends State<HomePageScreen> {
               ),
               const SizedBox(height: 15),
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const DataScreen(),
+                    ),
+                  );
+                },
                 child: Container(
                   height: 70,
                   decoration: BoxDecoration(
