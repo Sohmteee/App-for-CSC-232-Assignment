@@ -10,6 +10,6 @@ class DataScreen extends StatefulWidget {
 class _DataScreenState extends State<DataScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
