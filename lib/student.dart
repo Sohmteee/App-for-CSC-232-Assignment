@@ -26,7 +26,7 @@ class Student extends HiveObject {
   @HiveField(7)
   String phone;
 
-  @HiveField(7)
+  @HiveField(8)
 
   Student({
     required this.firstName,
