@@ -15,12 +15,15 @@ class Student extends HiveObject {
   String department;
 
   @HiveField(4)
-  String email;
+  String stateOfOrigin;
 
   @HiveField(5)
-  int regNumber;
+  String email;
 
   @HiveField(6)
+  int regNumber;
+
+  @HiveField(7)
   String phone;
 
   @HiveField(7)
