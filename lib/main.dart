@@ -9,7 +9,6 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-
   const MyApp({super.key});
 
   @override
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: "Poppins",
       ),
-      home: const HomePage(),
+      home: const HomePageScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
