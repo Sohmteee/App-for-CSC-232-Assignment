@@ -3,7 +3,7 @@ import 'package:hive/hive.dart';
 import 'screens/homepage.dart';
 
 void main() async {
-  await Hive.initFlutter();
+  await Hive.init();
   await Hive.openBox('myBox');
   runApp(const MyApp());
 }
