@@ -17,7 +17,11 @@ class _DataScreenState extends State<DataScreen> {
             const Center(
               child: Text("Student List"),
             ),
-            DataTable(columns: [DataColumn(label: Text("Reg Number"))], rows: rows)
+            DataTable(columns: [
+              DataColumn(
+                label: Text("Reg Number"),
+              ),
+            ], rows: rows)
           ],
         ),
       ),
