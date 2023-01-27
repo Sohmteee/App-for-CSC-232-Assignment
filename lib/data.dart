@@ -62,5 +62,5 @@ List<String> stateOfOrigin = [
 ];
 
 List<Student> testStudentList = [
-  Student somto = Student(firstName: "Somto", lastName: "Ukaegbe", sex: "Male", department: "Computer Science", regNumber: 2020514006, phone: 08063828438, email: "somto")
+  Student somto = Student(firstName: "Somto", lastName: "Ukaegbe", sex: "Male", department: "Computer Science", regNumber: 2020514006, phone: 08063828438, email: "somto@gmail.com",);
 ];
