@@ -49,7 +49,7 @@ class _DataScreenState extends State<DataScreen> {
                           cells: [
                             DataCell(
                               Text(cell.firstName),
-                            )
+                            ),
                           ],
                         ))
                     .toList(),
