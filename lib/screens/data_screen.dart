@@ -18,31 +18,35 @@ class _DataScreenState extends State<DataScreen> {
               child: Text("Student List"),
             ),
             Scrollbar(
-              child: DataTable(
-                columns: const [
-                  DataColumn(
-                    label: Text("Reg Number"),
-                  ),
-                  DataColumn(
-                    label: Text("Name"),
-                  ),
-                  DataColumn(
-                    label: Text("Sex"),
-                  ),
-                  DataColumn(
-                    label: Text("Department"),
-                  ),
-                  DataColumn(
-                    label: Text("Stae of Origin"),
-                  ),
-                  DataColumn(
-                    label: Text("Phone Number"),
-                  ),
-                  DataColumn(
-                    label: Text("Email Address"),
+              child: SingleChildScrollView(
+                children: [
+                  DataTable(
+                    columns: const [
+                      DataColumn(
+                        label: Text("Reg Number"),
+                      ),
+                      DataColumn(
+                        label: Text("Name"),
+                      ),
+                      DataColumn(
+                        label: Text("Sex"),
+                      ),
+                      DataColumn(
+                        label: Text("Department"),
+                      ),
+                      DataColumn(
+                        label: Text("Stae of Origin"),
+                      ),
+                      DataColumn(
+                        label: Text("Phone Number"),
+                      ),
+                      DataColumn(
+                        label: Text("Email Address"),
+                      ),
+                    ],
+                    rows: [],
                   ),
                 ],
-                rows: [],
               ),
             )
           ],
