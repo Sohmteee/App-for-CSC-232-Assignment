@@ -60,7 +60,7 @@ class _DataScreenState extends State<DataScreen> {
                               Text(cell.department),
                             ),
                             DataCell(
-                              Text(cell.),
+                              Text(cell.stateOfOrigin),
                             ),
                             DataCell(
                               Text(cell.firstName),
