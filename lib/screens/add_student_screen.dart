@@ -61,6 +61,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const ,
               CustomField(
                 keyboardType: TextInputType.name,
                 controller: firstName,
