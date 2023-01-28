@@ -4,14 +4,14 @@ import '../custom/custom_dropdown.dart';
 import '../custom/custom_field.dart';
 import '../data.dart';
 
-class HomePageScreen extends StatefulWidget {
-  const HomePageScreen({super.key});
+class AddStudentScreen extends StatefulWidget {
+  const AddStudentScreen({super.key});
 
   @override
-  State<HomePageScreen> createState() => _HomePageScreenState();
+  State<AddStudentScreen> createState() => _AddStudentScreenState();
 }
 
-class _HomePageScreenState extends State<HomePageScreen> {
+class _AddStudentScreenState extends State<AddStudentScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
