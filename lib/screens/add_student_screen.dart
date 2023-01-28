@@ -59,7 +59,6 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: ListView(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 30),
               CustomField(
