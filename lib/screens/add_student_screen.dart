@@ -15,6 +15,8 @@ class AddStudentScreen extends StatefulWidget {
 class _AddStudentScreenState extends State<AddStudentScreen> {
   @override
   Widget build(BuildContext context) {
+    void validateInfo() {}
+
     return Scaffold(
       body: SafeArea(
         child: Padding(
