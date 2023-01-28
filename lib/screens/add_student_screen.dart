@@ -28,7 +28,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       email.clear();
     }
 
-    void validateInfo() {
+    bool validateInfo() {
       bool firstNameIsValid = firstName.value.text.trim().isNotEmpty ||
           firstName.value.text.trim() != "";
       bool lastNameIsValid = lastName.value.text.trim().isNotEmpty ||
@@ -43,7 +43,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       bool emailIsValid =
           email.value.text.trim().isNotEmpty || email.value.text.trim() != "";
 
-          
+          return (first)
     }
 
     return Scaffold(
