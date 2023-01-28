@@ -1,4 +1,5 @@
 import 'package:app_for_csc_232_assignment/screens/data_screen.dart';
+import 'package:app_for_csc_232_assignment/screens/homepage_screen.dart';
 import 'package:flutter/material.dart';
 import '../custom/custom_dropdown.dart';
 import '../custom/custom_field.dart';
@@ -102,7 +103,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const DataScreen(),
+                      builder: (context) => const HomePageScreen(),
                     ),
                   );
                 },
