@@ -51,7 +51,7 @@ class _DataScreenState extends State<DataScreen> {
                               Text(student.regNumber.toString()),
                             ),
                             DataCell(
-                              Text(student.firstName + " "),
+                              Text("${student.firstName} ${student.lastName}"),
                             ),
                             DataCell(
                               Text(student.sex),
