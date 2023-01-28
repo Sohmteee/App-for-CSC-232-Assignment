@@ -22,7 +22,9 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       lastName.clear();
       sexValue = null;
       departmentValue = null;
-      stVa
+      stateOfOriginValue = null;
+      regNo.clear();
+      phone.clear();
     }
 
     void validateInfo() {}
