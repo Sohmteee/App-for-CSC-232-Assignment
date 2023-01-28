@@ -27,6 +27,8 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       phoneNumber.clear();
     }
 
+    disp
+
     void validateInfo() {}
 
     return Scaffold(
