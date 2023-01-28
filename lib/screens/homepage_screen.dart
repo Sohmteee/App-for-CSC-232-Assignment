@@ -12,7 +12,11 @@ class _HomePageScreenState extends State<HomePageScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(),
+        child: Column(
+          children: [
+            Center(child: ,)
+          ],
+        ),
       ),
     );
   }
