@@ -15,10 +15,9 @@ class AddStudentScreen extends StatefulWidget {
 class _AddStudentScreenState extends State<AddStudentScreen> {
   @override
   Widget build(BuildContext context) {
-    
+
     @override
     void initState() {
-      super.initState();
       firstName.clear();
       lastName.clear();
       sexValue = null;
@@ -27,6 +26,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       regNo.clear();
       phoneNumber.clear();
       email.clear();
+      super.initState();
     }
 
     bool validateInfo() {
