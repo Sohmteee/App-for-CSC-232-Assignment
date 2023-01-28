@@ -33,14 +33,14 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
           firstName.value.text.trim() != "";
       bool lastNameIsNull = lastName.value.text.trim().isEmpty ||
           lastName.value.text.trim() != "";
-          bool sexIsNull = sexValue.isEmpty || sexV
-          
-      bool regNoIsNull = regNo.value.text.trim().isEmpty ||
-          regNo.value.text.trim() != "";
+      bool sexIsNull = sexValue.isEmpty || sexValue != "";
+
+      bool regNoIsNull =
+          regNo.value.text.trim().isEmpty || regNo.value.text.trim() != "";
       bool phoneNumberIsNull = phoneNumber.value.text.trim().isEmpty ||
           phoneNumber.value.text.trim() != "";
-      bool emailIsNull = email.value.text.trim().isEmpty ||
-          email.value.text.trim() != "";
+      bool emailIsNull =
+          email.value.text.trim().isEmpty || email.value.text.trim() != "";
     }
 
     return Scaffold(
