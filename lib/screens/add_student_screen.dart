@@ -29,18 +29,18 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
     }
 
     void validateInfo() {
-      bool firstNameIsValid = firstName.value.text.trim().isEmpty ||
+      bool firstNameIsValid = firstName.value.text.trim().isNotEmpty ||
           firstName.value.text.trim() != "";
-      bool lastNameIsValid = lastName.value.text.trim().isEmpty ||
+      bool lastNameIsValid = lastName.value.text.trim().isNotEmpty ||
           lastName.value.text.trim() != "";
       bool sexIsValid = sexValue == null || sexValue != "";
 
       bool regNoIsValid =
-          regNo.value.text.trim().isEmpty || regNo.value.text.trim() != "";
-      bool phoneNumberIsValid = phoneNumber.value.text.trim().isEmpty ||
+          regNo.value.text.trim().isNotEmpty || regNo.value.text.trim() != "";
+      bool phoneNumberIsValid = phoneNumber.value.text.trim().isNotEmpty ||
           phoneNumber.value.text.trim() != "";
       bool emailIsValid =
-          email.value.text.trim().isEmpty || email.value.text.trim() != "";
+          email.value.text.trim().isNotEmpty || email.value.text.trim() != "";
     }
 
     return Scaffold(
