@@ -46,7 +46,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
