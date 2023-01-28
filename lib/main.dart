@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'screens/add_student_screen.dart';
+import 'screens/homepage_screen.dart';
 
 void main() async {
   await Hive.initFlutter();
