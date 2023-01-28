@@ -1,3 +1,4 @@
+import 'package:app_for_csc_232_assignment/functions.dart';
 import 'package:app_for_csc_232_assignment/screens/data_screen.dart';
 import 'package:app_for_csc_232_assignment/screens/homepage_screen.dart';
 import 'package:flutter/material.dart';
@@ -17,14 +18,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
   Widget build(BuildContext context) {
     @override
     void initState() {
-      firstName.clear();
-      lastName.clear();
-      sexValue = null;
-      departmentValue = null;
-      stateOfOriginValue = null;
-      regNo.clear();
-      phoneNumber.clear();
-      email.clear();
+      clearInfo();
       super.initState();
     }
 

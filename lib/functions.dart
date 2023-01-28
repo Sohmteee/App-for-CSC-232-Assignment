@@ -1,3 +1,5 @@
+import 'data.dart';
+
 void clearInfo() {
   firstName.clear();
   lastName.clear();
