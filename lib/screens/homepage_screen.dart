@@ -14,6 +14,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text("Add Student"),
             Text("View Students"),
