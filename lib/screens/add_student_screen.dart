@@ -29,7 +29,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
     }
 
     void validateInfo() {
-      bool firstNameIsNull = 
+      bool firstNameIsNull = firstName.value.
     }
 
     return Scaffold(
