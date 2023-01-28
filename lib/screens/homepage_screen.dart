@@ -15,8 +15,9 @@ class _HomePageScreenState extends State<HomePageScreen> {
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: const [
               Text("Add Student"),
+               SizedBox(height: 30),
               Text("View Students"),
             ],
           ),
