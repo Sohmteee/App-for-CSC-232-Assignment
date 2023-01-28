@@ -29,7 +29,9 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
     }
 
     void validateInfo() {
-      bool firstNameIsNull = firstName.value.text.isEmpty || firstName.tex;
+      bool firstNameIsNull = firstName.value.text.trim().isEmpty || firstName.value.text.trim() != "";
+      bool firstNameIsNull = firstName.value.text.trim().isEmpty ||
+          firstName.value.text.trim() != "";
     }
 
     return Scaffold(
