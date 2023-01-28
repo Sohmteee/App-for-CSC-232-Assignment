@@ -12,10 +12,12 @@ class _HomePageScreenState extends State<HomePageScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Center(
-          child: Column(
-            children: [Text("Add Student"), Text("View Students"),],
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Text("Add Student"),
+            Text("View Students"),
+          ],
         ),
       ),
     );
