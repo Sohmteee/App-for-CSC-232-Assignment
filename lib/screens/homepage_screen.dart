@@ -64,7 +64,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                     ),
                     child: const Center(
                       child: Text(
-                        "View Students" "View Students",
+                        "View Students",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
