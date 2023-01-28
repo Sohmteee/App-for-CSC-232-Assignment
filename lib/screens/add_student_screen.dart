@@ -29,17 +29,17 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
     }
 
     void validateInfo() {
-      bool firstNameIsNull = firstName.value.text.trim().isEmpty ||
+      bool firstNameIsValid = firstName.value.text.trim().isEmpty ||
           firstName.value.text.trim() != "";
-      bool lastNameIsNull = lastName.value.text.trim().isEmpty ||
+      bool lastNameIsValid = lastName.value.text.trim().isEmpty ||
           lastName.value.text.trim() != "";
       // bool sexIsNull = sexValue == null || sexValue != "";
 
-      bool regNoIsNull =
+      bool regNoIsValid =
           regNo.value.text.trim().isEmpty || regNo.value.text.trim() != "";
-      bool phoneNumberIsNull = phoneNumber.value.text.trim().isEmpty ||
+      bool phoneNumberIsValid = phoneNumber.value.text.trim().isEmpty ||
           phoneNumber.value.text.trim() != "";
-      bool emailIsNull =
+      bool emailIsValid =
           email.value.text.trim().isEmpty || email.value.text.trim() != "";
     }
 
