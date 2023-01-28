@@ -25,9 +25,8 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       stateOfOriginValue = null;
       regNo.clear();
       phoneNumber.clear();
+      email.clear();
     }
-
-    
 
     void validateInfo() {}
 
