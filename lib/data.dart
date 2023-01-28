@@ -72,4 +72,14 @@ List<Student> testStudentList = [
     phone: "08063828438",
     email: "somto@gmail.com",
   ),
+  Student(
+    firstName: "Somto",
+    lastName: "Ukaegbe",
+    sex: "Male",
+    department: "Computer Science",
+    stateOfOrigin: "Abia",
+    regNumber: 2020514006,
+    phone: "08063828438",
+    email: "somto@gmail.com",
+  ),
 ];
