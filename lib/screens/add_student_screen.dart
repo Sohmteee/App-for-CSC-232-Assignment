@@ -15,6 +15,12 @@ class AddStudentScreen extends StatefulWidget {
 class _AddStudentScreenState extends State<AddStudentScreen> {
   @override
   Widget build(BuildContext context) {
+@override
+void initState() {
+  super.initState();
+  
+}
+
     void validateInfo() {}
 
     return Scaffold(
