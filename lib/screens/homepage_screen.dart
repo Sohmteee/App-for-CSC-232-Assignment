@@ -1,4 +1,5 @@
 import 'package:app_for_csc_232_assignment/screens/add_student_screen.dart';
+import 'package:app_for_csc_232_assignment/screens/data_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomePageScreen extends StatefulWidget {
@@ -46,7 +47,32 @@ class _HomePageScreenState extends State<HomePageScreen> {
                   ),
                 ),
                 SizedBox(height: 30),
-                
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const DataScreen(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "View Students" "View Students",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
