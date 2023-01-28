@@ -28,7 +28,9 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       email.clear();
     }
 
-    void validateInfo() {}
+    void validateInfo() {
+      bool firstNameIsNull = 
+    }
 
     return Scaffold(
       body: SafeArea(
