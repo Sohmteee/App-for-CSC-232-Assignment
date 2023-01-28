@@ -24,10 +24,9 @@ class Student extends HiveObject {
   int regNumber;
 
   @HiveField(7)
-  String phone;
+  String phoneNumber;
 
   @HiveField(8)
-
   Student({
     required this.firstName,
     required this.lastName,
@@ -35,7 +34,7 @@ class Student extends HiveObject {
     required this.department,
     required this.stateOfOrigin,
     required this.regNumber,
-    required this.phone,
+    required this.phoneNumber,
     required this.email,
   });
 }

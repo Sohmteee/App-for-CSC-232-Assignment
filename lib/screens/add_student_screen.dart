@@ -24,7 +24,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       departmentValue = null;
       stateOfOriginValue = null;
       regNo.clear();
-      phone.clear();
+      phoneNumber.clear();
     }
 
     void validateInfo() {}

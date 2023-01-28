@@ -69,7 +69,7 @@ List<Student> testStudentList = [
     department: "Computer Science",
     stateOfOrigin: "Abia",
     regNumber: 2020514006,
-    phone: "08063828438",
+    phoneNumber: "08063828438",
     email: "somto@gmail.com",
   ),
   Student(
@@ -79,7 +79,7 @@ List<Student> testStudentList = [
     department: "Computer Science",
     stateOfOrigin: "Abia",
     regNumber: 2020514006,
-    phone: "08063828438",
+    phoneNumber: "08063828438",
     email: "somto@gmail.com",
   ),
 ];
