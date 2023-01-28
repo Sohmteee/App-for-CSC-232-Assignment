@@ -20,57 +20,60 @@ class _DataScreenState extends State<DataScreen> {
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: DataTable(
-                columns: const [
-                  DataColumn(
-                    label: Text("Reg Number"),
-                  ),
-                  DataColumn(
-                    label: Text("Name"),
-                  ),
-                  DataColumn(
-                    label: Text("Sex"),
-                  ),
-                  DataColumn(
-                    label: Text("Department"),
-                  ),
-                  DataColumn(
-                    label: Text("State of Origin"),
-                  ),
-                  DataColumn(
-                    label: Text("Phone Number"),
-                  ),
-                  DataColumn(
-                    label: Text("Email Address"),
-                  ),
-                ],
-                rows: testStudentList
-                    .map((student) => DataRow(
-                          cells: [
-                            DataCell(
-                              Text(student.regNumber.toString()),
-                            ),
-                            DataCell(
-                              Text("${student.firstName} ${student.lastName}"),
-                            ),
-                            DataCell(
-                              Text(student.sex),
-                            ),
-                            DataCell(
-                              Text(student.department),
-                            ),
-                            DataCell(
-                              Text(student.stateOfOrigin),
-                            ),
-                            DataCell(
-                              Text(student.phone),
-                            ),
-                            DataCell(
-                              Text(student.email),
-                            ),
-                          ],
-                        ))
-                    .toList(),
+              child: Expanded(
+                child: DataTable(
+                  columns: const [
+                    DataColumn(
+                      label: Text("Reg Number"),
+                    ),
+                    DataColumn(
+                      label: Text("Name"),
+                    ),
+                    DataColumn(
+                      label: Text("Sex"),
+                    ),
+                    DataColumn(
+                      label: Text("Department"),
+                    ),
+                    DataColumn(
+                      label: Text("State of Origin"),
+                    ),
+                    DataColumn(
+                      label: Text("Phone Number"),
+                    ),
+                    DataColumn(
+                      label: Text("Email Address"),
+                    ),
+                  ],
+                  rows: testStudentList
+                      .map((student) => DataRow(
+                            cells: [
+                              DataCell(
+                                Text(student.regNumber.toString()),
+                              ),
+                              DataCell(
+                                Text(
+                                    "${student.firstName} ${student.lastName}"),
+                              ),
+                              DataCell(
+                                Text(student.sex),
+                              ),
+                              DataCell(
+                                Text(student.department),
+                              ),
+                              DataCell(
+                                Text(student.stateOfOrigin),
+                              ),
+                              DataCell(
+                                Text(student.phone),
+                              ),
+                              DataCell(
+                                Text(student.email),
+                              ),
+                            ],
+                          ))
+                      .toList(),
+                ),
               ),
             )
           ],
