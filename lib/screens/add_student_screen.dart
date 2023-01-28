@@ -35,15 +35,15 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
           lastName.value.text.trim() != "";
       bool sexIsValid = sexValue != null || sexValue != "";
       bool departmentIsValid = departmentValue != null || departmentValue != "";
-      bool sexIsValid = sexValue != null || sexValue != "";
-
-
+      bool stateOfOriginIsValid = stateOfOriginValue != null || stateOfOriginValue != "";
       bool regNoIsValid =
           regNo.value.text.trim().isNotEmpty || regNo.value.text.trim() != "";
       bool phoneNumberIsValid = phoneNumber.value.text.trim().isNotEmpty ||
           phoneNumber.value.text.trim() != "";
       bool emailIsValid =
           email.value.text.trim().isNotEmpty || email.value.text.trim() != "";
+
+          
     }
 
     return Scaffold(
