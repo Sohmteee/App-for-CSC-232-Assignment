@@ -58,10 +58,10 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20),
-          child: Column(
+          child: ListView(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const ,
+              const SizedBox(height: 30),
               CustomField(
                 keyboardType: TextInputType.name,
                 controller: firstName,
