@@ -34,7 +34,6 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       bool lastNameIsValid = lastName.value.text.trim().isEmpty ||
           lastName.value.text.trim() != "";
       bool sexIsValid = sexValue == null || sexValue != "";
-      bool sexIsValid = sexValue == null || sexValue != "";
 
       bool regNoIsValid =
           regNo.value.text.trim().isEmpty || regNo.value.text.trim() != "";
