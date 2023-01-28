@@ -60,7 +60,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
           padding: const EdgeInsets.all(20),
           child: ListView(
             children: [
-              const SizedBox(height: 30),
+              const SizedBox(height: 50),
               CustomField(
                 keyboardType: TextInputType.name,
                 controller: firstName,
