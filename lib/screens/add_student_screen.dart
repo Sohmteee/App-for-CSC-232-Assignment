@@ -19,6 +19,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
     void initState() {
       super.initState();
       firstName.clear();
+      lastName.clear();
     }
 
     void validateInfo() {}
