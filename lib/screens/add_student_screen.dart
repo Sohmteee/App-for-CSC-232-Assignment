@@ -100,6 +100,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               const SizedBox(height: 15),
               GestureDetector(
                 onTap: () {
+                  validateInfo();
                   Navigator.push(
                     context,
                     MaterialPageRoute(
