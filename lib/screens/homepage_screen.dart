@@ -14,10 +14,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
       body: SafeArea(
         child: Center(
           child: Column(
-            children: [
-              Text("Add Contact"),
-              Text("")
-            ],
+            children: [Text("Add Student"), Text("View Students"),],
           ),
         ),
       ),
