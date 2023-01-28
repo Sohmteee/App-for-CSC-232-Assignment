@@ -18,7 +18,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
 @override
 void initState() {
   super.initState();
-  
+  firstName.text
 }
 
     void validateInfo() {}
