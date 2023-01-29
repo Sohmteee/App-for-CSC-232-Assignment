@@ -38,7 +38,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       bool emailIsValid =
           email.value.text.trim().isNotEmpty && email.value.text.trim() != "";
 
-      return (phoneNumberIsValid);
+      return (firstNameIsValid);
     }
 
     return Scaffold(
@@ -128,7 +128,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                 onTap: () {
                   debugPrint(validateInfo().toString());
                   if (validateInfo()) {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
                         builder: (context) => const HomePageScreen(),
