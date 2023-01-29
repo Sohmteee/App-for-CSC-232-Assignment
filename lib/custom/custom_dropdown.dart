@@ -42,7 +42,7 @@ class _CustomDropDownState extends State<CustomDropDown> {
         onChanged: (String? newValue) {
           setState(() {
             widget.value = newValue!;
-            debugPrint(value)
+            debugPrint(value.toString());
           });
         },
         isExpanded: true,
