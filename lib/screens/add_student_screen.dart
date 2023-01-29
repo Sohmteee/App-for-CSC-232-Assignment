@@ -38,7 +38,15 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       bool emailIsValid =
           email.text.trim().isNotEmpty && email.value.text.trim() != "";
 
-      return (phoneNumber.value.text.trim() != "");
+      return (sexIsValid);
+      // return (firstNameIsValid &&
+      //     lastNameIsValid &&
+      //     sexIsValid &&
+      //     departmentIsValid &&
+      //     stateOfOriginIsValid &&
+      //     regNoIsValid &&
+      //     phoneNumberIsValid &&
+      //     emailIsValid);
     }
 
     return Scaffold(
