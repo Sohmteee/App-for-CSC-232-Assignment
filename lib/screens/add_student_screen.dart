@@ -128,7 +128,8 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                 onTap: () {
                   debugPrint(validateInfo().toString());
                   if (validateInfo()) {
-                    Navigator.push(
+                    Navigator.pushNamed(
+
                       context,
                       MaterialPageRoute(
                         builder: (context) => const HomePageScreen(),
