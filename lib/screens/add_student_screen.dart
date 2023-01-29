@@ -92,13 +92,13 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               const SizedBox(height: 20),
               CustomField(
                 keyboardType: TextInputType.phone,
-                controller: regNo,
+                controller: phoneNumber,
                 hintText: "Phone Number",
               ),
               const SizedBox(height: 20),
               CustomField(
                 keyboardType: TextInputType.emailAddress,
-                controller: regNo,
+                controller: email,
                 hintText: "Email Address",
               ),
               const SizedBox(height: 7),
