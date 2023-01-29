@@ -40,7 +40,9 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
 
       return (firstNameIsValid &&
           lastNameIsValid &&
-          regNoIsValid);
+          regNoIsValid &&
+          phoneNumberIsValid &&
+          emailIsValid);
     }
 
     return Scaffold(
