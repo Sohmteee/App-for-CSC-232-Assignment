@@ -131,7 +131,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                     Navigator.pushAndRemoveUntil(
                       MaterialPageRoute(
                         builder: (context) => const HomePageScreen(),
-                      
+                        
                       ),
                     );
                     clearInfo();
