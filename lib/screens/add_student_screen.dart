@@ -18,7 +18,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
   Widget build(BuildContext context) {
     @override
     void initState() {
-      clearInfo();
+      // clearInfo();
       super.initState();
     }
 
