@@ -135,6 +135,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               GestureDetector(
                 onTap: () {
                   debugPrint(validateInfo().toString());
+                  debugPrint(sexValue);
                   if (validateInfo()) {
                     Navigator.push(
                       context,
