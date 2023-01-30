@@ -1,6 +1,5 @@
 import 'package:app_for_csc_232_assignment/screens/homepage_screen.dart';
 import 'package:flutter/material.dart';
-import '../custom/custom_dropdown.dart';
 import '../custom/custom_field.dart';
 import '../data.dart';
 import '../functions.dart';
