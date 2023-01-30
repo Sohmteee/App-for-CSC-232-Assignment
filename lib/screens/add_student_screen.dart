@@ -138,8 +138,8 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                 ),
                 child: DropdownButton(
                   value: sexValue,
-                  hint: const Text("Department"),
-                  items: department.map((String items) {
+                  hint: const Text("State of Origin"),
+                  items: stateOfOrigin.map((String items) {
                     return DropdownMenuItem(
                       value: items,
                       child: Text(items),
@@ -147,18 +147,13 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                   }).toList(),
                   onChanged: (String? newValue) {
                     setState(() {
-                      departmentValue = newValue!;
-                      debugPrint(departmentValue.toString());
+                      stateOfOriginValue = newValue!;
+                      debugPrint(stateOfOriginValue.toString());
                     });
                   },
                   isExpanded: true,
                   underline: Container(),
                 ),
-              ),
-              CustomDropDown(
-                hint: "State of Origin",
-                value: stateOfOriginValue,
-                valueList: stateOfOrigin,
               ),
               const SizedBox(height: 20),
               CustomField(
