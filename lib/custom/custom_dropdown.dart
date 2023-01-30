@@ -5,13 +5,13 @@ class CustomDropDown extends StatefulWidget {
     super.key,
     this.width,
     required this.hint,
-    required this.data,
+    required this.value,
     required this.dataList,
   });
 
   final double? width;
   final String hint;
-  String? data;
+  String? value;
   final List<String> dataList;
 
   @override
@@ -31,7 +31,7 @@ class _CustomDropDownState extends State<CustomDropDown> {
         ),
       ),
       child: DropdownButton(
-        value: widget.data,
+        value: widget.value,
         hint: Text(widget.hint),
         items: widget.dataList.map((String items) {
           return DropdownMenuItem(
@@ -41,8 +41,8 @@ class _CustomDropDownState extends State<CustomDropDown> {
         }).toList(),
         onChanged: (String? newValue) {
           setState(() {
-            widget.data = newValue!;
-            debugPrint(widget.data.toString());
+            widget.value = newValue!;
+            debugPrint(widget.value.toString());
           });
         },
         isExpanded: true,

@@ -72,42 +72,42 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-      width: 120,
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(
-          color: Colors.grey,
-        ),
-      ),
-      child: DropdownButton(
-        value: widget.data,
-        hint: Text(widget.hint),
-        items: widget.dataList.map((String items) {
-          return DropdownMenuItem(
-            value: items,
-            child: Text(items),
-          );
-        }).toList(),
-        onChanged: (String? newValue) {
-          setState(() {
-            widget.data = newValue!;
-            debugPrint(widget.data.toString());
-          });
-        },
-        isExpanded: true,
-        underline: Container(),
-      ),
-    );
+                    width: 120,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    child: DropdownButton(
+                      value: widget.value,
+                      hint: Text(widget.hint),
+                      items: widget.dataList.map((String items) {
+                        return DropdownMenuItem(
+                          value: items,
+                          child: Text(items),
+                        );
+                      }).toList(),
+                      onChanged: (String? newValue) {
+                        setState(() {
+                          widget.value = newValue!;
+                          debugPrint(widget.value.toString());
+                        });
+                      },
+                      isExpanded: true,
+                      underline: Container(),
+                    ),
+                  ),
                   CustomDropDown(
                     hint: "Sex",
-                    data: sexValue,
+                    value: sexValue,
                     dataList: sex,
                     width: 120,
                   ),
                   CustomDropDown(
                     hint: "Department",
-                    data: departmentValue,
+                    value: departmentValue,
                     dataList: department,
                     width: 200,
                   ),
@@ -116,7 +116,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               const SizedBox(height: 20),
               CustomDropDown(
                 hint: "State of Origin",
-                data: stateOfOriginValue,
+                value: stateOfOriginValue,
                 dataList: stateOfOrigin,
               ),
               const SizedBox(height: 20),
