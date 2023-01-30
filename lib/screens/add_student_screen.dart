@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../custom/custom_dropdown.dart';
 import '../custom/custom_field.dart';
 import '../data.dart';
+import '../functions.dart';
 
 class AddStudentScreen extends StatefulWidget {
   const AddStudentScreen({super.key});
@@ -16,7 +17,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
   Widget build(BuildContext context) {
     @override
     void initState() {
-      // clearInfo();
+      clearInfo();
       super.initState();
     }
 
@@ -36,15 +37,14 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       bool emailIsValid =
           email.text.trim().isNotEmpty && email.value.text.trim() != "";
 
-      return (sexIsValid);
-      // return (firstNameIsValid &&
-      //     lastNameIsValid &&
-      //     sexIsValid &&
-      //     departmentIsValid &&
-      //     stateOfOriginIsValid &&
-      //     regNoIsValid &&
-      //     phoneNumberIsValid &&
-      //     emailIsValid);
+      return (firstNameIsValid &&
+          lastNameIsValid &&
+          sexIsValid &&
+          departmentIsValid &&
+          stateOfOriginIsValid &&
+          regNoIsValid &&
+          phoneNumberIsValid &&
+          emailIsValid);
     }
 
     return Scaffold(
