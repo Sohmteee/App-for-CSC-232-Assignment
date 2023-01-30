@@ -125,10 +125,36 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                       underline: Container(),
                     ),
                   ),
-                
                 ],
               ),
               const SizedBox(height: 20),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(
+                    color: Colors.grey,
+                  ),
+                ),
+                child: DropdownButton(
+                  value: sexValue,
+                  hint: const Text("Department"),
+                  items: department.map((String items) {
+                    return DropdownMenuItem(
+                      value: items,
+                      child: Text(items),
+                    );
+                  }).toList(),
+                  onChanged: (String? newValue) {
+                    setState(() {
+                      departmentValue = newValue!;
+                      debugPrint(departmentValue.toString());
+                    });
+                  },
+                  isExpanded: true,
+                  underline: Container(),
+                ),
+              ),
               CustomDropDown(
                 hint: "State of Origin",
                 value: stateOfOriginValue,
