@@ -81,9 +81,9 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                       ),
                     ),
                     child: DropdownButton(
-                      value: widget.value,
-                      hint: Text(widget.hint),
-                      items: widget.dataList.map((String items) {
+                      value: sexValue,
+                      hint: const Text("Sex"),
+                      items: widget.valueList.map((String items) {
                         return DropdownMenuItem(
                           value: items,
                           child: Text(items),
@@ -102,13 +102,13 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                   CustomDropDown(
                     hint: "Sex",
                     value: sexValue,
-                    dataList: sex,
+                    valueList: sex,
                     width: 120,
                   ),
                   CustomDropDown(
                     hint: "Department",
                     value: departmentValue,
-                    dataList: department,
+                    valueList: department,
                     width: 200,
                   ),
                 ],
@@ -117,7 +117,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               CustomDropDown(
                 hint: "State of Origin",
                 value: stateOfOriginValue,
-                dataList: stateOfOrigin,
+                valueList: stateOfOrigin,
               ),
               const SizedBox(height: 20),
               CustomField(
