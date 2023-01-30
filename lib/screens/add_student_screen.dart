@@ -1,5 +1,3 @@
-import 'package:app_for_csc_232_assignment/functions.dart';
-import 'package:app_for_csc_232_assignment/screens/data_screen.dart';
 import 'package:app_for_csc_232_assignment/screens/homepage_screen.dart';
 import 'package:flutter/material.dart';
 import '../custom/custom_dropdown.dart';
@@ -83,7 +81,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                     child: DropdownButton(
                       value: sexValue,
                       hint: const Text("Sex"),
-                      items: widget.valueList.map((String items) {
+                      items: sex.map((String items) {
                         return DropdownMenuItem(
                           value: items,
                           child: Text(items),
