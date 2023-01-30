@@ -71,6 +71,34 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  Container(
+      width: 120,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(
+          color: Colors.grey,
+        ),
+      ),
+      child: DropdownButton(
+        value: widget.data,
+        hint: Text(widget.hint),
+        items: widget.dataList.map((String items) {
+          return DropdownMenuItem(
+            value: items,
+            child: Text(items),
+          );
+        }).toList(),
+        onChanged: (String? newValue) {
+          setState(() {
+            widget.data = newValue!;
+            debugPrint(widget.data.toString());
+          });
+        },
+        isExpanded: true,
+        underline: Container(),
+      ),
+    );
                   CustomDropDown(
                     hint: "Sex",
                     data: sexValue,
