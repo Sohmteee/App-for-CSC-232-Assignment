@@ -74,13 +74,13 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                   CustomDropDown(
                     hint: "Sex",
                     value: sexValue,
-                    data: sex,
+                    dataList: sex,
                     width: 120,
                   ),
                   CustomDropDown(
                     hint: "Department",
                     value: departmentValue,
-                    data: department,
+                    dataList: department,
                     width: 200,
                   ),
                 ],
@@ -89,7 +89,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               CustomDropDown(
                 hint: "State of Origin",
                 value: stateOfOriginValue,
-                data: stateOfOrigin,
+                dataList: stateOfOrigin,
               ),
               const SizedBox(height: 20),
               CustomField(
