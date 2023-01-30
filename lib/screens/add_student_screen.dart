@@ -98,7 +98,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                     ),
                   ),
                   Container(
-                    width: 120,
+                    width: 200,
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
@@ -108,8 +108,8 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                     ),
                     child: DropdownButton(
                       value: sexValue,
-                      hint: const Text("Sex"),
-                      items: sex.map((String items) {
+                      hint: const Text("Department"),
+                      items: department.map((String items) {
                         return DropdownMenuItem(
                           value: items,
                           child: Text(items),
@@ -117,20 +117,15 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                       }).toList(),
                       onChanged: (String? newValue) {
                         setState(() {
-                          sexValue = newValue!;
-                          debugPrint(sexValue.toString());
+                          departmentValue = newValue!;
+                          debugPrint(departmentValue.toString());
                         });
                       },
                       isExpanded: true,
                       underline: Container(),
                     ),
                   ),
-                  CustomDropDown(
-                    hint: "Department",
-                    value: departmentValue,
-                    valueList: department,
-                    width: 200,
-                  ),
+                
                 ],
               ),
               const SizedBox(height: 20),
