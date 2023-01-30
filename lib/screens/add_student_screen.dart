@@ -143,7 +143,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         builder: (context) => const HomePageScreen(),
                       ),
                     );
-                    clearInfo();
+                    // clearInfo();
                   }
                 },
                 child: Container(
