@@ -89,19 +89,41 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                       }).toList(),
                       onChanged: (String? newValue) {
                         setState(() {
-                          widget.value = newValue!;
-                          debugPrint(widget.value.toString());
+                          sexValue = newValue!;
+                          debugPrint(sexValue.toString());
                         });
                       },
                       isExpanded: true,
                       underline: Container(),
                     ),
                   ),
-                  CustomDropDown(
-                    hint: "Sex",
-                    value: sexValue,
-                    valueList: sex,
+                  Container(
                     width: 120,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    child: DropdownButton(
+                      value: sexValue,
+                      hint: const Text("Sex"),
+                      items: sex.map((String items) {
+                        return DropdownMenuItem(
+                          value: items,
+                          child: Text(items),
+                        );
+                      }).toList(),
+                      onChanged: (String? newValue) {
+                        setState(() {
+                          sexValue = newValue!;
+                          debugPrint(sexValue.toString());
+                        });
+                      },
+                      isExpanded: true,
+                      underline: Container(),
+                    ),
                   ),
                   CustomDropDown(
                     hint: "Department",
