@@ -10,7 +10,7 @@ final TextEditingController email = TextEditingController();
 
 bool bypass = false;
 
-String sexValue = "Male";
+String? sexValue;
 String? departmentValue;
 String? stateOfOriginValue;
 
