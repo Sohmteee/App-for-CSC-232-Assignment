@@ -107,7 +107,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                       ),
                     ),
                     child: DropdownButton(
-                      value: sexValue,
+                      value: departmentValue,
                       hint: const Text("Department"),
                       items: department.map((String items) {
                         return DropdownMenuItem(
@@ -137,7 +137,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                   ),
                 ),
                 child: DropdownButton(
-                  value: sexValue,
+                  value: stateOfOriginValue,
                   hint: const Text("State of Origin"),
                   items: stateOfOrigin.map((String items) {
                     return DropdownMenuItem(
@@ -207,7 +207,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         builder: (context) => const HomePageScreen(),
                       ),
                     );
-                    // clearInfo();
+                    clearInfo();
                   }
                 },
                 child: Container(
