@@ -1,7 +1,5 @@
 import 'package:app_for_csc_232_assignment/data.dart';
-import 'package:app_for_csc_232_assignment/functions.dart';
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 
 class DataScreen extends StatefulWidget {
   const DataScreen({super.key});
@@ -12,20 +10,7 @@ class DataScreen extends StatefulWidget {
 
 class _DataScreenState extends State<DataScreen> {
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    Hive.close();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    studentsList = box.get("myBox");
-
     return Scaffold(
       body: SafeArea(
         child: ListView(
@@ -63,26 +48,25 @@ class _DataScreenState extends State<DataScreen> {
                     .map((student) => DataRow(
                           cells: [
                             DataCell(
-                              Text(listToStudent(student).regNumber.toString()),
+                              Text(student.regNumber.toString()),
                             ),
                             DataCell(
-                              Text(
-                                  "${listToStudent(student).firstName} ${listToStudent(student).lastName}"),
+                              Text("${student.firstName} ${student.lastName}"),
                             ),
                             DataCell(
-                              Text(listToStudent(student).sex),
+                              Text(student.sex),
                             ),
                             DataCell(
-                              Text(listToStudent(student).department),
+                              Text(student.department),
                             ),
                             DataCell(
-                              Text(listToStudent(student).stateOfOrigin),
+                              Text(student.stateOfOrigin),
                             ),
                             DataCell(
-                              Text(listToStudent(student).phoneNumber),
+                              Text(student.phoneNumber),
                             ),
                             DataCell(
-                              Text(listToStudent(student).email),
+                              Text(student.email),
                             ),
                           ],
                         ))
