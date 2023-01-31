@@ -19,7 +19,7 @@ class _DataScreenState extends State<DataScreen> {
   @override
   Widget build(BuildContext context) {
     studentsList = box.get("studentsList");
-    
+
     return Scaffold(
       body: SafeArea(
         child: ListView(
@@ -54,32 +54,34 @@ class _DataScreenState extends State<DataScreen> {
                   ),
                 ],
                 rows: studentsList
-                    .map((student) => DataRow(
-                          cells: [
-                            DataCell(
-                              Text(listToStudent(student).regNumber.toString()),
-                            ),
-                            DataCell(
-                              Text(
-                                  "${listToStudent(student).firstName} ${listToStudent(student).lastName}"),
-                            ),
-                            DataCell(
-                              Text(listToStudent(student).sex),
-                            ),
-                            DataCell(
-                              Text(listToStudent(student).department),
-                            ),
-                            DataCell(
-                              Text(listToStudent(student).stateOfOrigin),
-                            ),
-                            DataCell(
-                              Text(listToStudent(student).phoneNumber),
-                            ),
-                            DataCell(
-                              Text(listToStudent(student).email),
-                            ),
-                          ],
-                        ))
+                    .map(
+                      (student) => DataRow(
+                        cells: [
+                          DataCell(
+                            Text(listToStudent(student).regNumber.toString()),
+                          ),
+                          DataCell(
+                            Text(
+                                "${listToStudent(student).firstName} ${listToStudent(student).lastName}"),
+                          ),
+                          DataCell(
+                            Text(listToStudent(student).sex),
+                          ),
+                          DataCell(
+                            Text(listToStudent(student).department),
+                          ),
+                          DataCell(
+                            Text(listToStudent(student).stateOfOrigin),
+                          ),
+                          DataCell(
+                            Text(listToStudent(student).phoneNumber),
+                          ),
+                          DataCell(
+                            Text(listToStudent(student).email),
+                          ),
+                        ],
+                      ),
+                    )
                     .toList(),
               ),
             )
