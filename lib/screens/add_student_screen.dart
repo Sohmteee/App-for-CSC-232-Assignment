@@ -51,11 +51,11 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
             : "Please enter your reg number";
       }
       if (!phoneNumberIsValid) {
-        return ((regNo.text.trim().isNotEmpty &&
-                    regNo.value.text.trim() != "") &&
-                regNo.text.trim().length != 10)
-            ? "Please enter a valid reg number"
-            : "Please enter your reg number";
+        return ((phoneNumber.text.trim().isNotEmpty &&
+                    phoneNumber.value.text.trim() != "") &&
+                phoneNumber.text.trim().length != 11)
+            ? "Please enter a valid phone number"
+            : "Please enter your phone number";
       }
       if (!emailIsValid) {
         return (EmailValidator.validate(email.text))
