@@ -59,7 +59,7 @@ class _DataScreenState extends State<DataScreen> {
                   ),
                 ],
                 rows: studentsList
-                    .map((student) => DataRow(
+                    .map((student.) => DataRow(
                           cells: [
                             DataCell(
                               Text(student.regNumber.toString()),

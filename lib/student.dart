@@ -31,17 +31,4 @@ class Student {
       regNumber,
     ];
   }
-
-  listToStudent(studentList) {
-    return Student(
-      firstName: studentList[0],
-      lastName: studentList[1],
-      sex: studentList[2],
-      department: studentList[3],
-      stateOfOrigin: studentList[4],
-      regNumber: studentList[0],
-      phoneNumber: studentList[0],
-      email: studentList[0],
-    );
-  }
 }
