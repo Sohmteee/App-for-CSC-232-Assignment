@@ -47,6 +47,11 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
             ? "Please enter a valid reg number"
             : "Please enter your reg number";
       }
+      if (!phoneNumberIsValid) {
+        return (phoneNumber.value.text.trim().length != 11)
+            ? "Please enter a valid phone number"
+            : "Please enter your phone number";
+      }
     }
 
     bool validateInfo() {
