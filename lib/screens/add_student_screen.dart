@@ -240,6 +240,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         regNumber: regNo.text.trim() as int,
                         phoneNumber: phoneNumber.text.trim(),
                         email: email.text.trim());
+                    studentList.add(student);
 
                     Navigator.push(
                       context,
