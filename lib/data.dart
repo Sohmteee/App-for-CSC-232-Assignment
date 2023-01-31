@@ -9,6 +9,7 @@ final TextEditingController phoneNumber = TextEditingController();
 final TextEditingController email = TextEditingController();
 
 bool bypass = false;
+String? errorMessage;
 
 String? sexValue;
 String? departmentValue;
