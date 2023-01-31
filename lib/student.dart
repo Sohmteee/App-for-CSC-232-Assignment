@@ -31,4 +31,17 @@ class Student {
       regNumber,
     ];
   }
+
+  toStudent() {
+    return Student(
+    firstName: firstName,
+    lastName: lastName,
+    sex: sex,
+    department,
+    stateOfOrigin,
+    regNumber,
+    phoneNumber,
+    email,
+  );
+  }
 }
