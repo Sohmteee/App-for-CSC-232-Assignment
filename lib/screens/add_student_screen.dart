@@ -43,7 +43,6 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       if (!sexIsValid) return "Please enter your sex";
       if (!departmentIsValid) return "Please enter your department";
       if (!stateOfOriginIsValid) return "Please enter your state of origin";
-      if (!regNoIsValid) return "Please enter your reg number";
       if (!regNoIsValid) {
         return (regNo.text.trim().length != 10)
             ? "Please enter a valid reg number"
