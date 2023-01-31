@@ -242,7 +242,6 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         email: email.text.trim());
                     studentsList.add(student);
                     box.put("studentsList", studentsList);
-                    debugPrint(studentsList.toString());
 
                     Navigator.push(
                       context,
