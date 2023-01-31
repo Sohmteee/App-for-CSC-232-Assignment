@@ -237,10 +237,11 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         sex: sexValue!,
                         department: departmentValue!,
                         stateOfOrigin: stateOfOriginValue!,
-                        regNumber: (regNo.text.trim()),
+                        regNumber: int.parse(regNo.text.trim()),
                         phoneNumber: phoneNumber.text.trim(),
                         email: email.text.trim());
                     studentList.add(student);
+                    
 
                     Navigator.push(
                       context,
