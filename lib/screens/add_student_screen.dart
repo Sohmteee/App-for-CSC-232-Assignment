@@ -44,14 +44,18 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       if (!departmentIsValid) return "Please enter your department";
       if (!stateOfOriginIsValid) return "Please enter your state of origin";
       if (!regNoIsValid) {
-        return (regNo.text.trim().length != 10)
+        return ((regNo.text.trim().isNotEmpty &&
+                    regNo.value.text.trim() != "") &&
+                regNo.text.trim().length != 10)
             ? "Please enter a valid reg number"
             : "Please enter your reg number";
       }
       if (!phoneNumberIsValid) {
-        return (phoneNumber.text.trim().length == 11)
-            ? "Please enter a valid phone number"
-            : "Please enter your phone number";
+        return ((regNo.text.trim().isNotEmpty &&
+                    regNo.value.text.trim() != "") &&
+                regNo.text.trim().length != 10)
+            ? "Please enter a valid reg number"
+            : "Please enter your reg number";
       }
       if (!emailIsValid) {
         return (EmailValidator.validate(email.text))
