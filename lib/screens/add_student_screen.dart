@@ -69,32 +69,6 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       return null;
     }
 
-    bool validateInfo() {
-      bool firstNameIsValid =
-          firstName.text.trim().isNotEmpty && firstName.value.text.trim() != "";
-      bool lastNameIsValid =
-          lastName.text.trim().isNotEmpty && lastName.value.text.trim() != "";
-      bool sexIsValid = sexValue != null && sexValue != "";
-      bool departmentIsValid = departmentValue != null && departmentValue != "";
-      bool stateOfOriginIsValid =
-          stateOfOriginValue != null && stateOfOriginValue != "";
-      bool regNoIsValid =
-          regNo.text.trim().isNotEmpty && regNo.value.text.trim() != "";
-      bool phoneNumberIsValid = phoneNumber.text.trim().isNotEmpty &&
-          phoneNumber.value.text.trim() != "";
-      bool emailIsValid =
-          email.text.trim().isNotEmpty && email.value.text.trim() != "";
-
-      return (firstNameIsValid &&
-          lastNameIsValid &&
-          sexIsValid &&
-          departmentIsValid &&
-          stateOfOriginIsValid &&
-          regNoIsValid &&
-          phoneNumberIsValid &&
-          emailIsValid);
-    }
-
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -247,6 +221,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               GestureDetector(
                 onTap: () {
                   if (errorMessage() == null) {
+                    St
                     Navigator.push(
                       context,
                       MaterialPageRoute(
