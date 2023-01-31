@@ -52,6 +52,11 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
             ? "Please enter a valid phone number"
             : "Please enter your phone number";
       }
+      if (!emailIsValid) {
+        return (Email.)
+            ? "Please enter a valid email address"
+            : "Please enter your email address";
+      }
     }
 
     bool validateInfo() {
