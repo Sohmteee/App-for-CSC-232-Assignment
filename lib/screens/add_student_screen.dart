@@ -222,7 +222,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               GestureDetector(
                 onTap: () {
                   if (errorMessage() == null) {
-                    Student student = Student(firstName: firstName.text.trim(), lastName: lastName.text.trim(), sex: sexValue!, department: departmentValue!, stateOfOrigin: stateOfOriginValue!, regNumber: regNo.text.trim().toString(), phoneNumber: phoneNumber, email: email)
+                    Student student = Student(firstName: firstName.text.trim(), lastName: lastName.text.trim(), sex: sexValue!, department: departmentValue!, stateOfOrigin: stateOfOriginValue!, regNumber: regNo.text.trim(), phoneNumber: phoneNumber, email: email)
                     Navigator.push(
                       context,
                       MaterialPageRoute(
