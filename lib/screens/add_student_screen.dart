@@ -30,8 +30,8 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       bool stateOfOriginIsValid =
           stateOfOriginValue != null && stateOfOriginValue != "";
       bool regNoIsValid = regNo.text.trim().isNotEmpty &&
-          regNo.value.text.trim() != "" &&
-          regNo.value.text.trim().length == 10;
+          regNo.value.text.trim() != ""
+          ;
       bool phoneNumberIsValid = phoneNumber.text.trim().isNotEmpty &&
           phoneNumber.value.text.trim() != "";
       bool emailIsValid =
@@ -40,7 +40,11 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       if (!firstNameIsValid) return "Please enter your first name";
       if (!lastNameIsValid) return "Please enter your surname";
       if (!sexIsValid) return "Please enter your sex";
-      if (!departmentIsValid) return "Please enter your surname";
+      if (!departmentIsValid) return "Please enter your department";
+      if (!stateOfOriginIsValid) return "Please enter your state of origin";
+      if (!regNoIsValid) return "Please enter your reg number";
+      if (!) return "Please enter your reg number";
+
 
     }
 
