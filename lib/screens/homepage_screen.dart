@@ -16,7 +16,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
   @override
   void initState() {
     super.initState();
-    var box = Hive.box("myBox");
+    var box = Hive.box("myBox");  
 
     if (box.get("studentsList") == null) box.put("studentsList", []);
     studentsList = box.get("studentsList");
