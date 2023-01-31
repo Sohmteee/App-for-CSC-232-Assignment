@@ -64,7 +64,7 @@ List<String> stateOfOrigin = [
 ];
 
 List studentsList = [
-  [
+  /* [
     "Somto",
     "Ukaegbe",
     "Male",
@@ -72,6 +72,6 @@ List studentsList = [
     "Abia",
     "somto@gmail.com",
     "08063828438",
-    2020514006,
-  ]
+    202051406,
+  ] */
 ];
