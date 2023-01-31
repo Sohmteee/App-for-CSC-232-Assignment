@@ -18,8 +18,9 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
   Widget build(BuildContext context) {
     @override
     void initState() {
-      clearInfo();
       super.initState();
+      clearInfo();
+      
     }
 
     errorMessage() {
@@ -232,7 +233,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         phoneNumber: phoneNumber.text.trim(),
                         email: email.text.trim());
 
-                        
+
                     Navigator.push(
                       context,
                       MaterialPageRoute(
