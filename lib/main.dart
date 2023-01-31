@@ -7,9 +7,6 @@ void main() async {
   await Hive.initFlutter();
   Hive.openBox('myBox');
 
-  if (box.get("studentsList") == null) box.put("studentsList", []);
-  studentsList = box.get("studentsList");
-
   runApp(const MyApp());
 }
 
@@ -17,7 +14,16 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
+  void initState() {
+    super.initState();
+    if (box.get("studentsList") == null) box.put("studentsList", []);
+    studentsList = box.get("studentsList");
+  }
+
+  @override
   Widget build(BuildContext context) {
+
+    
     return MaterialApp(
       title: 'CSC 232 Assignment',
       theme: ThemeData(
