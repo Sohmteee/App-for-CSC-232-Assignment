@@ -66,6 +66,11 @@ List<String> stateOfOrigin = [
 List studentsList = [
   [
     "Somto",
-    "Ukaegbe"
+    "Ukaegbe",
+    "Male",
+    "CSC",
+    "Abia",
+    "somto@gmail.com",
+    "08063828438"
   ]
 ];
