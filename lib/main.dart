@@ -5,6 +5,10 @@ import 'screens/homepage_screen.dart';
 void main() async {
   await Hive.initFlutter();
   Box box = await Hive.openBox('myBox');
+
+  if (box.get("studentsList") == null) box.put("userId", docUser.id);
+  userId = box.get("userId");
+
   runApp(const MyApp());
 }
 
