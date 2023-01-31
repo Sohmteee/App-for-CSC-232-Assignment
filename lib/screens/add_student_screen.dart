@@ -24,6 +24,13 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       Box box = Hive.box("myBox");
     }
 
+    @override
+    void dispose() {
+      // Closes all Hive boxes
+      Hive.close();
+      super.dispose();
+    }
+
     errorMessage() {
       bool firstNameIsValid =
           firstName.text.trim().isNotEmpty && firstName.value.text.trim() != "";

@@ -62,7 +62,7 @@ List<String> stateOfOrigin = [
   "Zamfara"
 ];
 
-List<Student> testStudentList = [
+List<Student> studentList = [
   Student(
     firstName: "Somto",
     lastName: "Ukaegbe",
