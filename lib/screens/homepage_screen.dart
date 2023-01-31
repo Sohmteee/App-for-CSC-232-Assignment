@@ -2,6 +2,8 @@ import 'package:app_for_csc_232_assignment/screens/add_student_screen.dart';
 import 'package:app_for_csc_232_assignment/screens/data_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../data.dart';
+
 class HomePageScreen extends StatefulWidget {
   const HomePageScreen({super.key});
 
@@ -10,6 +12,13 @@ class HomePageScreen extends StatefulWidget {
 }
 
 class _HomePageScreenState extends State<HomePageScreen> {
+  @override
+  void initState() {
+    super.initState();
+    if (box.get("studentsList") == null) box.put("studentsList", []);
+    studentsList = box.get("studentsList");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

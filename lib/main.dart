@@ -15,13 +15,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    @override
-    void initState() {
-      super.initState();
-      
-    }
-    
     return MaterialApp(
       title: 'CSC 232 Assignment',
       theme: ThemeData(
