@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 
 import 'student.dart';
 
@@ -7,6 +8,8 @@ final TextEditingController lastName = TextEditingController();
 final TextEditingController regNo = TextEditingController();
 final TextEditingController phoneNumber = TextEditingController();
 final TextEditingController email = TextEditingController();
+
+Box box = Hive.box("muBox");
 
 bool bypass = false;
 String? errorMessage;
