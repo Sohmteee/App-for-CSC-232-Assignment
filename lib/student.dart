@@ -34,14 +34,14 @@ class Student {
 
   toStudent() {
     return Student(
-    firstName: firstName,
-    lastName: lastName,
-    sex: sex,
-    department,
-    stateOfOrigin,
-    regNumber,
-    phoneNumber,
-    email,
-  );
+      firstName: firstName,
+      lastName: lastName,
+      sex: sex,
+      department: department,
+      stateOfOrigin: stateOfOrigin,
+      regNumber: regNumber,
+      phoneNumber: phoneNumber,
+      email: email,
+    );
   }
 }
