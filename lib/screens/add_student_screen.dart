@@ -36,8 +36,9 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       bool phoneNumberIsValid = phoneNumber.text.trim().isNotEmpty &&
           phoneNumber.value.text.trim() != "" &&
           phoneNumber.text.trim().length == 11;
-      bool emailIsValid =
-          email.text.trim().isNotEmpty && email.value.text.trim() != "";
+      bool emailIsValid = email.text.trim().isNotEmpty &&
+          email.value.text.trim() != "" &&
+          EmailValidator.validate(email.text);
 
       if (!firstNameIsValid) return "Please enter your first name";
       if (!lastNameIsValid) return "Please enter your surname";
