@@ -1,5 +1,6 @@
 import 'package:app_for_csc_232_assignment/data.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class DataScreen extends StatefulWidget {
   const DataScreen({super.key});
@@ -16,11 +17,14 @@ class _DataScreenState extends State<DataScreen> {
 
   @override
   void dispose() {
+    Hive.close();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+    studentsList = box.get("myBox");
+
     return Scaffold(
       body: SafeArea(
         child: ListView(
