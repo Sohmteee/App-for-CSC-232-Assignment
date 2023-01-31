@@ -17,19 +17,7 @@ class AddStudentScreen extends StatefulWidget {
 class _AddStudentScreenState extends State<AddStudentScreen> {
   @override
   Widget build(BuildContext context) {
-    @override
-    void initState() {
-      super.initState();
-      clearInfo();
-      var box = Hive.box("myBox");
-    }
-
-    @override
-    void dispose() {
-      // Closes all Hive boxes
-      Hive.close();
-      super.dispose();
-    }
+    
 
     errorMessage() {
       bool firstNameIsValid =
