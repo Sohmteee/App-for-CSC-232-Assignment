@@ -1,6 +1,7 @@
 import 'package:app_for_csc_232_assignment/screens/homepage_screen.dart';
 import 'package:app_for_csc_232_assignment/student.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 import '../custom/custom_field.dart';
 import '../data.dart';
 import '../functions.dart';
@@ -20,7 +21,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
     void initState() {
       super.initState();
       clearInfo();
-      
+      Box box = Hive.box("myBox");
     }
 
     errorMessage() {
@@ -232,7 +233,6 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         regNumber: regNo.text.trim() as int,
                         phoneNumber: phoneNumber.text.trim(),
                         email: email.text.trim());
-
 
                     Navigator.push(
                       context,
