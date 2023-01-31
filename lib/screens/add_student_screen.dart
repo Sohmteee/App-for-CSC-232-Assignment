@@ -44,7 +44,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       if (!departmentIsValid) return "Please enter your department";
       if (!stateOfOriginIsValid) return "Please enter your state of origin";
       if (!regNoIsValid) {
-        return (regNo.text.trim().length == 10)
+        return (regNo.text.trim().length != 10)
             ? "Please enter a valid reg number"
             : "Please enter your reg number";
       }
