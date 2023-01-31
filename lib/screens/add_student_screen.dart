@@ -237,7 +237,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         sex: sexValue!,
                         department: departmentValue!,
                         stateOfOrigin: stateOfOriginValue!,
-                        regNumber: regNo.text.trim() as int,
+                        regNumber: (regNo.text.trim()),
                         phoneNumber: phoneNumber.text.trim(),
                         email: email.text.trim());
                     studentList.add(student);
