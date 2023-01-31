@@ -256,7 +256,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                             child: Container(
                               height: 100,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(30),
+                                borderRadius: BorderRadius.circular(60),
                               ),
                               child: Center(
                                 child: Text(errorMessage()!),
