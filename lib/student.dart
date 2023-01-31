@@ -26,9 +26,9 @@ class Student {
       sex,
       department,
       stateOfOrigin,
-      email,
-      phoneNumber,
       regNumber,
+      phoneNumber,
+      email,
     ];
   }
 }
