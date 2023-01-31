@@ -19,5 +19,16 @@ class Student {
     required this.email,
   });
 
-  toList
+  toList() {
+    return [
+      firstName,
+      lastName,
+      sex,
+      department,
+      stateOfOrigin,
+      email,
+      phoneNumber,
+      regNumber,
+    ];
+  }
 }
