@@ -14,15 +14,13 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  void initState() {
-    super.initState();
-    if (box.get("studentsList") == null) box.put("studentsList", []);
-    studentsList = box.get("studentsList");
-  }
-
-  @override
   Widget build(BuildContext context) {
 
+    @override
+    void initState() {
+      super.initState();
+      
+    }
     
     return MaterialApp(
       title: 'CSC 232 Assignment',
