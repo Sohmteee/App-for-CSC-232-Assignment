@@ -19,7 +19,7 @@ listToStudent(studentList) {
     sex: studentList[2],
     department: studentList[3],
     stateOfOrigin: studentList[4],
-    regNumber: studentList[5],
+    regNumber: int.parse(studentList[5]),
     phoneNumber: studentList[6],
     email: studentList[7],
   );
