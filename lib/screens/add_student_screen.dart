@@ -1,4 +1,5 @@
 import 'package:app_for_csc_232_assignment/screens/homepage_screen.dart';
+import 'package:app_for_csc_232_assignment/student.dart';
 import 'package:flutter/material.dart';
 import '../custom/custom_field.dart';
 import '../data.dart';
@@ -221,7 +222,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               GestureDetector(
                 onTap: () {
                   if (errorMessage() == null) {
-                    St
+                    Student student = Student(firstName: firstName.text.trim(), lastName: lastName.text.trim(), sex: sex, department: department, stateOfOrigin: stateOfOrigin, regNumber: regNumber, phoneNumber: phoneNumber, email: email)
                     Navigator.push(
                       context,
                       MaterialPageRoute(
