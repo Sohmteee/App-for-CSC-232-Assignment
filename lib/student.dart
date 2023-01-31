@@ -1,12 +1,12 @@
 class Student {
-  String firstName;
-  String lastName;
-  String sex;
-  String department;
-  String stateOfOrigin;
-  String email;
+  String firstName,
+      lastName,
+      sex,
+      department,
+      stateOfOrigin,
+      email,
+      phoneNumber;
   int regNumber;
-  String phoneNumber;
 
   Student({
     required this.firstName,
