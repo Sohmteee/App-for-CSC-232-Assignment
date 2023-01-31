@@ -63,4 +63,9 @@ List<String> stateOfOrigin = [
   "Zamfara"
 ];
 
-List studentsList = [];
+List studentsList = [
+  [
+    "Somto",
+    "Ukaegbe"
+  ]
+];
