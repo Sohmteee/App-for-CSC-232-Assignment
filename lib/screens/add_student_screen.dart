@@ -21,7 +21,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
     void initState() {
       super.initState();
       clearInfo();
-      Box box = Hive.box("myBox");
+      var box = Hive.box("myBox");
     }
 
     @override
