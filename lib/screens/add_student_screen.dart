@@ -241,7 +241,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         phoneNumber: phoneNumber.text.trim(),
                         email: email.text.trim());
                     studentList.add(student);
-                    box.put(student.regNumber, student);
+                    box.put("studentsList", studentsList);
 
                     Navigator.push(
                       context,
