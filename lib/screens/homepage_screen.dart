@@ -1,6 +1,7 @@
 import 'package:app_for_csc_232_assignment/screens/add_student_screen.dart';
 import 'package:app_for_csc_232_assignment/screens/data_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 import '../data.dart';
 
@@ -15,6 +16,8 @@ class _HomePageScreenState extends State<HomePageScreen> {
   @override
   void initState() {
     super.initState();
+    var box = Hive.box("myBox");
+
     if (box.get("studentsList") == null) box.put("studentsList", []);
     studentsList = box.get("studentsList");
   }
