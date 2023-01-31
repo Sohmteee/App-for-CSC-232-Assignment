@@ -18,7 +18,7 @@ class _DataScreenState extends State<DataScreen> {
 
   @override
   Widget build(BuildContext context) {
-    studentsList = box.get("myBox");
+    studentsList = box.get("studentList");
 
     return Scaffold(
       body: SafeArea(
