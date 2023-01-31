@@ -249,7 +249,13 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                     );
                     clearInfo();
                   } else {
-                    showDialog(context: context, builder: builder)
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext builder) {
+                          return Dialog(
+                            child: center,
+                          );
+                        });
                   }
                 },
                 child: Container(
