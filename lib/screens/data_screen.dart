@@ -26,9 +26,9 @@ class _DataScreenState extends State<DataScreen> {
         "Male",
         "CSC",
         "Abia",
-        "somto@gmail.com",
-        "08063828438",
         2020514006,
+        "08063828438",
+        "somto@gmail.com",
       ]
     ];
 
