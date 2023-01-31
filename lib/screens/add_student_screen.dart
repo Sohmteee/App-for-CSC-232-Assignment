@@ -19,7 +19,6 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
   void initState() {
     super.initState();
     clearInfo();
-    var box = Hive.box("myBox");
   }
 
   @override
@@ -240,7 +239,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         regNumber: int.parse(regNo.text.trim()),
                         phoneNumber: phoneNumber.text.trim(),
                         email: email.text.trim());
-                    studentsList.add(student);
+                    studentsList.add(student.toList());
                     box.put("studentsList", studentsList);
 
                     Navigator.push(
