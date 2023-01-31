@@ -29,13 +29,15 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
       bool departmentIsValid = departmentValue != null && departmentValue != "";
       bool stateOfOriginIsValid =
           stateOfOriginValue != null && stateOfOriginValue != "";
-      bool regNoIsValid =
-          regNo.text.trim().isNotEmpty && regNo.value.text.trim() != "" && regNo.value.text.trim().length == 10;
+      bool regNoIsValid = regNo.text.trim().isNotEmpty &&
+          regNo.value.text.trim() != "" &&
+          regNo.value.text.trim().length == 10;
       bool phoneNumberIsValid = phoneNumber.text.trim().isNotEmpty &&
           phoneNumber.value.text.trim() != "";
       bool emailIsValid =
           email.text.trim().isNotEmpty && email.value.text.trim() != "";
 
+      if (!firstNameIsValid) return "";
     }
 
     bool validateInfo() {
