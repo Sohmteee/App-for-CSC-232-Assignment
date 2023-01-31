@@ -254,7 +254,10 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         builder: (BuildContext builder) {
                           return Dialog(
                             child: Container(
-                              height: ,
+                              height: 100,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
                               child: Center(
                                 child: Text(errorMessage()!),
                               ),
