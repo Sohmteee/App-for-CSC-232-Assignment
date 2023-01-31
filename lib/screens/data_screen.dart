@@ -19,6 +19,18 @@ class _DataScreenState extends State<DataScreen> {
   @override
   Widget build(BuildContext context) {
     // studentsList = box.get("myBox");
+    studentsList = [
+      [
+        "Somto",
+        "Ukaegbe",
+        "Male",
+        "CSC",
+        "Abia",
+        "somto@gmail.com",
+        "08063828438",
+        2020514006,
+      ]
+    ];
 
     return Scaffold(
       body: SafeArea(
