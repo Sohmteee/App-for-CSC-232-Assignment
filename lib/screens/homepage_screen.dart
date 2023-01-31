@@ -61,7 +61,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                 const SizedBox(height: 30),
                 GestureDetector(
                   onTap: () {
-                    deb
+                    debugPrint(box.get("studentsList").length.toString());
                     Navigator.push(
                       context,
                       MaterialPageRoute(
