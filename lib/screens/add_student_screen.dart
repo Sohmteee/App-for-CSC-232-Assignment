@@ -60,7 +60,9 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
             : "Please enter your phone number";
       }
       if (!emailIsValid) {
-        return (EmailValidator.validate(email.text))
+        return ((email.text.trim().isNotEmpty &&
+                    email.value.text.trim() != "") &&
+                !EmailValidator.validate(email.text))
             ? "Please enter a valid email address"
             : "Please enter your email address";
       }
