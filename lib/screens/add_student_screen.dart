@@ -240,7 +240,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                 onTap: () {
                   debugPrint(validateInfo().toString());
                   debugPrint(sexValue);
-                  if (errorMessage() != null) {
+                  if (errorMessage() == null) {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -253,7 +253,12 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                         context: context,
                         builder: (BuildContext builder) {
                           return Dialog(
-                            child: center,
+                            child: Container(
+                              height: ,
+                              child: Center(
+                                child: Text(errorMessage()!),
+                              ),
+                            ),
                           );
                         });
                   }
