@@ -34,7 +34,8 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
           regNo.value.text.trim() != "" &&
           regNo.text.trim().length == 10;
       bool phoneNumberIsValid = phoneNumber.text.trim().isNotEmpty &&
-          phoneNumber.value.text.trim() != "";
+          phoneNumber.value.text.trim() != "" &&
+          phoneNumber.text.trim().length == 11;
       bool emailIsValid =
           email.text.trim().isNotEmpty && email.value.text.trim() != "";
 
