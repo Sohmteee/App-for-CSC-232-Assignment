@@ -9,7 +9,7 @@ final TextEditingController regNo = TextEditingController();
 final TextEditingController phoneNumber = TextEditingController();
 final TextEditingController email = TextEditingController();
 
-Box box = Hive.box("muBox");
+Box box = Hive.box("myBox");
 
 bool bypass = false;
 String? errorMessage;
@@ -65,4 +65,25 @@ List<String> stateOfOrigin = [
   "Zamfara"
 ];
 
-List<Student> studentsList = [];
+List<Student> studentList = [
+  Student(
+    firstName: "Somto",
+    lastName: "Ukaegbe",
+    sex: "Male",
+    department: "Computer Science",
+    stateOfOrigin: "Abia",
+    regNumber: 2020514006,
+    phoneNumber: "08063828438",
+    email: "somto@gmail.com",
+  ),
+  Student(
+    firstName: "Somto",
+    lastName: "Ukaegbe",
+    sex: "Male",
+    department: "Computer Science",
+    stateOfOrigin: "Abia",
+    regNumber: 2020514006,
+    phoneNumber: "08063828438",
+    email: "somto@gmail.com",
+  ),
+];
