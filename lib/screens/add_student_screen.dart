@@ -22,13 +22,6 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
   }
 
   @override
-  void dispose() {
-    // Closes all Hive boxes
-    Hive.close();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     errorMessage() {
       bool firstNameIsValid =
