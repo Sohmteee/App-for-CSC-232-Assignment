@@ -8,7 +8,7 @@ void main() async {
   Box box = await Hive.openBox('myBox');
 
   if (box.get("studentsList") == null) box.put("studentsList", []);
-  studentList = box.get("studentsList");
+  studentsList = box.get("studentsList");
 
   runApp(const MyApp());
 }
