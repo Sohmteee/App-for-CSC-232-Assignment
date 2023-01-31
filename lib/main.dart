@@ -6,7 +6,6 @@ import 'screens/homepage_screen.dart';
 void main() async {
   await Hive.initFlutter();
   Hive.openBox('myBox');
-
   runApp(const MyApp());
 }
 
