@@ -238,8 +238,6 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
               const SizedBox(height: 15),
               GestureDetector(
                 onTap: () {
-                  debugPrint(validateInfo().toString());
-                  debugPrint(sexValue);
                   if (errorMessage() == null) {
                     Navigator.push(
                       context,
