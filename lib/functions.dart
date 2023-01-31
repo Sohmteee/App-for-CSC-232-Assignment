@@ -2,7 +2,7 @@ import 'data.dart';
 import 'student.dart';
 
 void clearInfo() {
-  firstName.value.clear();
+  firstName.clear();
   lastName.clear();
   sexValue = null;
   departmentValue = null;
