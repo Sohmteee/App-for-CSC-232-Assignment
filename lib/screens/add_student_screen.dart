@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../custom/custom_field.dart';
 import '../data.dart';
 import '../functions.dart';
+import 'package:email_validator/email_validator.dart';
+
 
 class AddStudentScreen extends StatefulWidget {
   const AddStudentScreen({super.key});
@@ -53,7 +55,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
             : "Please enter your phone number";
       }
       if (!emailIsValid) {
-        return (Email.)
+        return (EmailValidator.validate(email.))
             ? "Please enter a valid email address"
             : "Please enter your email address";
       }
