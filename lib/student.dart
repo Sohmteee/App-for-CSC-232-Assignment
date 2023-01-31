@@ -18,4 +18,6 @@ class Student {
     required this.phoneNumber,
     required this.email,
   });
+
+  toList
 }
