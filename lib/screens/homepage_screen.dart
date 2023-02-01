@@ -63,7 +63,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                 GestureDetector(
                   onTap: () {
                     debugPrint(box.get("studentsList").length.toString());
-                    exportToCsv(studentsList);
+
                     Navigator.push(
                       context,
                       MaterialPageRoute(
