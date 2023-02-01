@@ -19,7 +19,7 @@ class _DataScreenState extends State<DataScreen> {
   @override
   Widget build(BuildContext context) {
     studentsList = box.get("studentsList");
-    exportStudentsList(studentsList, "C:/Users/Somto/Desktop");
+    exportStudentsList(studentsList, "/storage");
 
     return Scaffold(
       body: SafeArea(
