@@ -26,33 +26,3 @@ mapToStudent(Map studentList) {
     email: studentList['email'],
   );
 }
-
-convertToCSV(studentsList) {
-  List data = [
-    [
-      "Reg Number",
-      "Name",
-      "Sex",
-      "Department",
-      "State of Origin",
-      "Phone Number",
-      "Email Address"
-    ],
-    ...studentsList
-        .map((student) => [
-              mapToStudent(student).regNumber.toString(),
-              "${mapToStudent(student).firstName} ${mapToStudent(student).lastName}",
-              mapToStudent(student).sex,
-              mapToStudent(student).department,
-              mapToStudent(student).stateOfOrigin,
-              mapToStudent(student).phoneNumber,
-              mapToStudent(student).email
-            ])
-        .toList()
-  ];
-
-  String csv = const ListToCsvConverter().convert(data);
-
-  final file = File("student_list.csv");
-  file.writeAsStringSync(csv);
-}
