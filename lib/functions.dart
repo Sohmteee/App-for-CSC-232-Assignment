@@ -28,7 +28,7 @@ mapToStudent(Map studentList) {
 }
 
 convertToCSV(studentsList) {
-  List<List<String>> data = [
+  List data = [
     [
       "Reg Number",
       "Name",
