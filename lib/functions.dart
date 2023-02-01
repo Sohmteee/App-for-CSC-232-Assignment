@@ -10,7 +10,7 @@ void clearInfo() {
   regNo.clear();
   phoneNumber.clear();
   email.clear();
-}         
+}
 
 listToStudent(studentList) {
   return Student(
@@ -19,7 +19,7 @@ listToStudent(studentList) {
     sex: studentList[2],
     department: studentList[3],
     stateOfOrigin: studentList[4],
-    regNumber: streeeeeeeeeeeeeeeddddddddddddddddddddddddddd8udentList[5] ,
+    regNumber: studentList[5] ,
     phoneNumber: studentList[6],
     email: studentList[7],
   );
