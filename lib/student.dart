@@ -22,6 +22,13 @@ class Student {
   toMap() {
     return {
       ['firstname'] : firstName,
+      {} : lastName,
+      {} : sex,
+      {} : department,
+      {} : stateOfOrigin,
+      {} : regNumber,
+      {} : phoneNumber,
+      {} : email,
     };
   }
 
