@@ -28,8 +28,8 @@ mapToStudent(Map studentList) {
 }
 
 void exportToCsv(List students) {
-  final String csv = const ListToCsvConverter()
-      .convert([students.map((student) => mapToStudent(student).toMap()).toList()]);
+  final String csv = const ListToCsvConverter().convert(
+      [students.map((student) => mapToStudent(student).toMap()).toList()]);
 
   final Directory directory = Directory.systemTemp;
   final File file = File('${directory.path}/students.csv');
