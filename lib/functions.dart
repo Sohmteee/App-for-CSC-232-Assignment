@@ -3,7 +3,6 @@ import 'student.dart';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 
-
 void clearInfo() {
   firstName.clear();
   lastName.clear();
@@ -33,10 +32,9 @@ Future<String> getAndroidFolderPath() async {
   return directory!.path;
 }
 
-
 exportStudentsList(list) async {
-  final Directory directory = Directory.systemTemp;
-  final File file = File('${directory.path}/students.csv');
+  String androidFolderPath = await getAndroidFolderPath();
+  final File file = File('$androidFolderPath/students.csv');
   String contents = list.join('\n');
   await file.writeAsString(contents);
 }
