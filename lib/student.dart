@@ -19,6 +19,12 @@ class Student {
     required this.email,
   });
 
+  toMap() {
+    return {
+      ['firstname'] : firstName,
+    };
+  }
+
   toList() {
     return [
       firstName,
