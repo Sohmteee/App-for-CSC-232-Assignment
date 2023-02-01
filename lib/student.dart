@@ -21,7 +21,7 @@ class Student {
 
   toMap() {
     return {
-      'firstname': firstName,
+      'firstName': firstName,
       'lastName': lastName,
       'sex': sex,
       'department': department,
