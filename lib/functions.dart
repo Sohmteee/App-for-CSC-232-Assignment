@@ -12,15 +12,15 @@ void clearInfo() {
   email.clear();
 }
 
-mapToStudent(studentList) {
+mapToStudent(Map studentList) {
   return Student(
-    firstName: studentList[0],
-    lastName: studentList[1],
-    sex: studentList[2],
-    department: studentList[3],
-    stateOfOrigin: studentList[4],
-    regNumber: int.parse(studentList[5]),
-    phoneNumber: studentList[6],
-    email: studentList[7],
+    firstName: studentList['firstName'],
+    lastName: studentList['lastName'],
+    sex: studentList['sex'],
+    department: studentList['department'],
+    stateOfOrigin: studentList['stateOfOrigin'],
+    regNumber: studentList['regNumber'],
+    phoneNumber: studentList['phoneNumber'],
+    email: studentList['email'],
   );
 }
