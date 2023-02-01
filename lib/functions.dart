@@ -12,7 +12,7 @@ void clearInfo() {
   email.clear();
 }
 
-listToStudent(studentList) {
+mapToStudent(studentList) {
   return Student(
     firstName: studentList[0],
     lastName: studentList[1],
