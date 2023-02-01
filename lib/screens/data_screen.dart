@@ -40,14 +40,6 @@ class _DataScreenState extends State<DataScreen> {
                 columns: const [
                   DataColumn(
                     label: Text(
-                      "Serial Number",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  DataColumn(
-                    label: Text(
                       "Reg Number",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
