@@ -24,8 +24,14 @@ class _DataScreenState extends State<DataScreen> {
       body: SafeArea(
         child: ListView(
           children: [
+            const SizedBox(height: 30),
             const Center(
-              child: Text("Student List"),
+              child: Text(
+                "Student List",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
