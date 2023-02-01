@@ -1,7 +1,6 @@
 import 'data.dart';
 import 'student.dart';
 import 'dart:io';
-import 'package:csv/csv.dart';
 
 void clearInfo() {
   firstName.clear();
@@ -26,6 +25,8 @@ mapToStudent(Map studentList) {
     email: studentList['email'],
   );
 }
+
+
 
 exportStudentsList(list) async {
   final Directory directory = Directory.systemTemp;
