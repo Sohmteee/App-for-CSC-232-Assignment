@@ -1,5 +1,8 @@
 import 'data.dart';
 import 'student.dart';
+import 'dart:convert';
+import 'package:csv/csv.dart';
+
 
 void clearInfo() {
   firstName.clear();
@@ -25,3 +28,28 @@ mapToStudent(Map studentList) {
   );
 }
 
+convertToCSV(studentsList) {
+List<List<String>> data = [
+    [
+      "Reg Number",
+      "Name",
+      "Sex",
+      "Department",
+      "State of Origin",
+      "Phone Number",
+      "Email Address"
+    ],
+    ...studentsList
+        .map((student) => [
+              mapToStudent(student).regNumber.toString(),
+              "${mapToStudent(student).firstName} ${mapToStudent(student).lastName}",
+              mapToStudent(student).sex,
+              mapToStudent(student).department,
+              mapToStudent(student).stateOfOrigin,
+              mapToStudent(student).phoneNumber,
+              mapToStudent(student).email
+            ])
+        .toList()
+  ];
+
+}
