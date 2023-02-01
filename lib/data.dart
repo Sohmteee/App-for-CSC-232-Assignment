@@ -23,6 +23,7 @@ List<String> sex = [
 List<String> department = [
   "Computer Science",
   "Library Science",
+  "Science Education",
 ];
 List<String> stateOfOrigin = [
   "Abia",
