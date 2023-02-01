@@ -10,7 +10,7 @@ void clearInfo() {
   regNo.clear();
   phoneNumber.clear();
   email.clear();
-}
+}         
 
 listToStudent(studentList) {
   return Student(
