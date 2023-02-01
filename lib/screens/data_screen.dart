@@ -40,7 +40,7 @@ class _DataScreenState extends State<DataScreen> {
               child: DataTable(
                 columns: const [
                   DataColumn(
-                    label: Text(
+                    label: SelectableText(
                       "Reg Number",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -48,7 +48,7 @@ class _DataScreenState extends State<DataScreen> {
                     ),
                   ),
                   DataColumn(
-                    label: Text(
+                    label: SelectableText(
                       "Name",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -56,7 +56,7 @@ class _DataScreenState extends State<DataScreen> {
                     ),
                   ),
                   DataColumn(
-                    label: Text(
+                    label: SelectableText(
                       "Sex",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -64,7 +64,7 @@ class _DataScreenState extends State<DataScreen> {
                     ),
                   ),
                   DataColumn(
-                    label: Text(
+                    label: SelectableText(
                       "Department",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ class _DataScreenState extends State<DataScreen> {
                     ),
                   ),
                   DataColumn(
-                    label: Text(
+                    label: SelectableText(
                       "State of Origin",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -80,7 +80,7 @@ class _DataScreenState extends State<DataScreen> {
                     ),
                   ),
                   DataColumn(
-                    label: Text(
+                    label: SelectableText(
                       "Phone Number",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -88,7 +88,7 @@ class _DataScreenState extends State<DataScreen> {
                     ),
                   ),
                   DataColumn(
-                    label: Text(
+                    label: SelectableText(
                       "Email Address",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -101,26 +101,27 @@ class _DataScreenState extends State<DataScreen> {
                       (student) => DataRow(
                         cells: [
                           DataCell(
-                            Text(mapToStudent(student).regNumber.toString()),
+                            SelectableText(
+                                mapToStudent(student).regNumber.toString()),
                           ),
                           DataCell(
-                            Text(
+                            SelectableText(
                                 "${mapToStudent(student).firstName} ${mapToStudent(student).lastName}"),
                           ),
                           DataCell(
-                            Text(mapToStudent(student).sex),
+                            SelectableText(mapToStudent(student).sex),
                           ),
                           DataCell(
-                            Text(mapToStudent(student).department),
+                            SelectableText(mapToStudent(student).department),
                           ),
                           DataCell(
-                            Text(mapToStudent(student).stateOfOrigin),
+                            SelectableText(mapToStudent(student).stateOfOrigin),
                           ),
                           DataCell(
-                            Text(mapToStudent(student).phoneNumber),
+                            SelectableText(mapToStudent(student).phoneNumber),
                           ),
                           DataCell(
-                            Text(mapToStudent(student).email),
+                            SelectableText(mapToStudent(student).email),
                           ),
                         ],
                       ),
