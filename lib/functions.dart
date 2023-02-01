@@ -1,6 +1,8 @@
 import 'data.dart';
 import 'student.dart';
 import 'dart:io';
+import 'package:path_provider/path_provider.dart';
+
 
 void clearInfo() {
   firstName.clear();
@@ -26,6 +28,10 @@ mapToStudent(Map studentList) {
   );
 }
 
+Future<String> getAndroidFolderPath() async {
+  final directory = await getExternalStorageDirectory();
+  return directory!.path;
+}
 
 
 exportStudentsList(list) async {
