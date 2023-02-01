@@ -1,3 +1,4 @@
+import 'package:app_for_csc_232_assignment/functions.dart';
 import 'package:app_for_csc_232_assignment/screens/add_student_screen.dart';
 import 'package:app_for_csc_232_assignment/screens/data_screen.dart';
 import 'package:flutter/material.dart';
@@ -62,6 +63,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                 GestureDetector(
                   onTap: () {
                     debugPrint(box.get("studentsList").length.toString());
+                    convertToCSV(studentsList);
                     Navigator.push(
                       context,
                       MaterialPageRoute(
