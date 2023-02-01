@@ -1,8 +1,5 @@
 import 'data.dart';
 import 'student.dart';
-import 'dart:io';
-import 'package:csv_table/csv_table.dart';
-
 
 void clearInfo() {
   firstName.clear();
@@ -28,14 +25,6 @@ mapToStudent(Map studentList) {
   );
 }
 
-Future<String> getAndroidFolderPath() async {
-  final directory = await getExternalStorageDirectory();
-  return directory!.path;
-}
 
 exportStudentsList(list) async {
-  String androidFolderPath = await getAndroidFolderPath();
-  final File file = File('$androidFolderPath/students.csv');
-  String contents = list.join('\n');
-  await file.writeAsString(contents);
 }
