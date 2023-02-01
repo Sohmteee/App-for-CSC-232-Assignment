@@ -28,7 +28,8 @@ mapToStudent(Map studentList) {
 }
 
 exportStudentsList(list) async {
-  final file = File(filePath);
+  String filePath = Directory.systemTemp;
+  final file = File(Directory.systemTemp);
   String contents = list.join('\n');
   await file.writeAsString(contents);
 }
