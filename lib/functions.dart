@@ -1,8 +1,7 @@
 import 'data.dart';
 import 'student.dart';
-import 'dart:convert';
+import 'dart:io';
 import 'package:csv/csv.dart';
-
 
 void clearInfo() {
   firstName.clear();
@@ -29,7 +28,7 @@ mapToStudent(Map studentList) {
 }
 
 convertToCSV(studentsList) {
-List<List<String>> data = [
+  List<List<String>> data = [
     [
       "Reg Number",
       "Name",
@@ -52,4 +51,8 @@ List<List<String>> data = [
         .toList()
   ];
 
+  String csv = const ListToCsvConverter().convert(data);
+
+  final file = File("student_list.csv");
+  file.writeAsStringSync(csv);
 }
