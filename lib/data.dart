@@ -64,15 +64,4 @@ List<String> stateOfOrigin = [
   "Zamfara"
 ];
 
-List studentsList = [
-  /* [
-    "Somto",
-    "Ukaegbe",
-    "Male",
-    "CSC",
-    "Abia",
-    "somto@gmail.com",
-    "08063828438",
-    202051406,
-  ] */
-];
+List studentsList = [];
