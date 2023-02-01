@@ -41,50 +41,57 @@ class _DataScreenState extends State<DataScreen> {
                   DataColumn(
                     label: Text(
                       "Reg Number",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold6),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   DataColumn(
                     label: Text(
                       "Name",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold6),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   DataColumn(
                     label: Text(
                       "Sex",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold6),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   DataColumn(
                     label: Text(
                       "Department",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold6),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   DataColumn(
                     label: Text(
                       "State of Origin",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold6),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   DataColumn(
                     label: Text(
                       "Phone Number",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold6),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   DataColumn(
                     label: Text(
                       "Email Address",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold6),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ],
