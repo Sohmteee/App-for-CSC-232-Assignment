@@ -2,6 +2,7 @@ import 'package:app_for_csc_232_assignment/data.dart';
 import 'package:app_for_csc_232_assignment/functions.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:zoom_widget/zoom_widget.dart';
 
 class DataScreen extends StatefulWidget {
   const DataScreen({super.key});
