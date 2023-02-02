@@ -217,7 +217,7 @@ class _AddStudentScreenState extends State<AddStudentScreen> {
                       fontSize: 16,
                     ),
                   ),
-                ],
+                ],  
               ),
               const SizedBox(height: 15),
               GestureDetector(
